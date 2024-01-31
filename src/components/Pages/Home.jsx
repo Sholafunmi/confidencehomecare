@@ -8,7 +8,7 @@ import About from './About'
 
 const Home = () => {
   return (
-    <div className='flex flex-col gap-4'>
+    <div name='home' id='home' className='flex flex-col gap-4'>
         <Navbar />
         <Hero />
         <Features/>

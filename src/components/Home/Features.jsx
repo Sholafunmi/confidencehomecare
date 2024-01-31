@@ -8,7 +8,7 @@ const Features = () => {
   return (
     <div className='features w-full h-fit md:flex justify-center items-center mt-14 py-6 md:py-20 md:gap-10 ' >
          
-                        <Link className=' w-[95%]  md:w-[28%] h-[350px]  '   to="/services"  smooth={true} offset={50} duration={500} >
+                        {/* <Link className=' w-[95%]  md:w-[28%] h-[350px]  '   to="/services"  smooth={true} offset={50} duration={500} >
                           <div name='servicebox' className="servicebox flex-col h-full  w-full mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#d5796d] ">
                               <div className="servicesTop h-[80%] w-full flex"></div>
 
@@ -19,28 +19,40 @@ const Features = () => {
                               </div>
 
                             </div>
-                        </Link>
+                        </Link> */}
+
+                        <div name='aboutbox' className="aboutbox flex-col w-[95%] h-[350px] md:w-[28%] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#d5796d]  ">
+                          <a className="servicesTop h-[80%] w-full flex "href="/services">
+                              
+                          </a>
+
+                          <div className='aboutBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] '>
+                              <a className='flex items-center font-bold text-[20px]' href="/services">Services</a>
+                          </div>
+
+                        </div>
+
 
 
                    <div name='aboutbox' className="aboutbox flex-col w-[95%] h-[350px] md:w-[28%] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#d5796d]  ">
-                        <a className="aboutTop h-[80%] w-full flex "href="">
+                        <a className="aboutTop h-[80%] w-full flex "href="/about">
                             
                         </a>
 
                         <div className='aboutBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] '>
-                            <a className='flex items-center font-bold text-[20px]' href="">About Us</a>
+                            <a className='flex items-center font-bold text-[20px]' href="/about">About Us</a>
                         </div>
 
                    </div>
 
                  
                    <div name='contactbox' className="contactbox flex-col w-[95%] h-[350px] md:w-[28%] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#d5796d] ">
-                        <a className="contactTop h-[80%] w-full flex "href="">
+                        <a className="contactTop h-[80%] w-full flex "href="/contact">
                         
                         </a>
 
                         <div className='contactBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] '>
-                            <a className='flex items-center font-bold text-[20px] ' href="">Contact Us</a>
+                            <a className='flex items-center font-bold text-[20px] ' href="/contact">Contact Us</a>
                         </div>
 
                    </div>

@@ -56,6 +56,19 @@ body {
 
 
 
+
+/* text-[#cf8d70]  */
+      /* {bg-[#23113e] } */
+.servicesIntro{
+  background-position: center ;
+  background-size: cover;
+  background: linear-gradient(rgba(98, 32, 3, 0.5), rgba(13, 1, 32, 0.5)), no-repeat url('./assets/images/pic5.jpg');
+}
+
+
+
+
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
