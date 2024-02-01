@@ -21,12 +21,12 @@ const Features = () => {
                             </div>
                         </Link> */}
 
-                        <div name='aboutbox' className="aboutbox flex-col w-[95%] h-[350px] md:w-[28%] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#d5796d]  ">
+                        <div name='servicebox' className="aboutbox flex-col w-[95%] h-[350px] md:w-[28%] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11]  ">
                           <a className="servicesTop h-[80%] w-full flex "href="/services">
                               
                           </a>
 
-                          <div className='aboutBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] '>
+                          <div className='servicesBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] '>
                               <a className='flex items-center font-bold text-[20px]' href="/services">Services</a>
                           </div>
 
@@ -34,7 +34,7 @@ const Features = () => {
 
 
 
-                   <div name='aboutbox' className="aboutbox flex-col w-[95%] h-[350px] md:w-[28%] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#d5796d]  ">
+                   <div name='aboutbox' className="aboutbox flex-col w-[95%] h-[350px] md:w-[28%] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11]  ">
                         <a className="aboutTop h-[80%] w-full flex "href="/about">
                             
                         </a>
@@ -46,7 +46,7 @@ const Features = () => {
                    </div>
 
                  
-                   <div name='contactbox' className="contactbox flex-col w-[95%] h-[350px] md:w-[28%] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#d5796d] ">
+                   <div name='contactbox' className="contactbox flex-col w-[95%] h-[350px] md:w-[28%] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11] ">
                         <a className="contactTop h-[80%] w-full flex "href="/contact">
                         
                         </a>

@@ -8,7 +8,7 @@ const Vision = () => {
     // top-[200vh]  
     <div name='vision' id='vision' className='flex flex-col w-ful h-fit md:px-16 md:py-8 py-6 bg-[#fcfafa] text-[#040404] md:gap-20 gap-4 justify-center items-center md:items-start ' >
     {/* mobile intro h3 */}
-        <h3 className='md:hidden flex font-bold text-2xl text-[#D85720] '>OUR VISION </h3>
+        <h3 className='md:hidden flex font-bold text-2xl text-[#b69d11] '>OUR VISION </h3>
         
         <div className='vision w-[90%] flex flex-col md:flex-row md:gap-10 gap-2 justify-center items-center '>
             <div className="visionright  w-[90%] md:w-[35%] border-[10px]  ">
@@ -16,7 +16,7 @@ const Vision = () => {
             </div>
 
             <div className='visionleft flex flex-col md:w-[60%] text-[#2f1a4e] gap-2 text-justify'>
-                 <h3 className='hidden md:flex font-bold text-2xl text-[#D85720] '>OUR VISION </h3>
+                 <h3 className='hidden md:flex font-bold text-2xl text-[#b69d11] '>OUR VISION </h3>
                 <li>At Confidence Personal Homecare Services, we envision a world where every individual's journey through life is met with dignity, comfort, and joy.</li>
                 <li>Our mission is to enrich the lives of our clients by providing unparalleled in-home care services tailored to seniors' unique needs. With a steadfast commitment to excellence, we prioritize the well-being of those in our care and their families, navigating the complexities of aging with compassion and expertise.</li>
                 <li>Recognizing life as a precious gift, we embrace the opportunity to make each moment meaningful, fostering connections and nurturing relationships that brighten lives. Our client-centered approach ensures that every interaction is infused with empathy and respect, touching hearts, inspiring smiles, and strengthening families one day at a time.</li>
@@ -30,13 +30,13 @@ const Vision = () => {
         {/* VALUES */}
         <div className='values w-full md:min-h-[70vh] flex flex-col md:flex-row md:gap-10 gap-4 justify-center items-center mt-10 '>
                  {/* mobile intro h3 */}
-            <h3 className=' flex md:hidden font-bold text-2xl text-[#D85720] '> VALUES </h3>
+            <h3 className=' flex md:hidden font-bold text-2xl text-[#b69d11] '> VALUES </h3>
             {/* mobile image  */}
             <div className="valuesright md:hidden w-[90%] md:w-[35%] h-[200px] md:min-h-[70vh] border-[10px]">
         
             </div>
             <div className="valuesleft flex flex-col w-[90%] md:w-[60%] text-[#2f1a4e] gap-2 text-justify">
-                <h3 className='hidden md:flex font-bold text-2xl text-[#D85720]' >VALUES:</h3>
+                <h3 className='hidden md:flex font-bold text-2xl text-[#b69d11]' >VALUES:</h3>
                 <li>Compassion: We demonstrate empathy and kindness in every interaction, understanding and addressing the unique needs of each individual with warmth and sensitivity.</li>
                 <li>Excellence: We are dedicated to delivering exceptional care services of the highest quality, consistently striving for excellence in all aspects of our work.</li>
                 <li>Dignity: We respect the inherent worth and dignity of every person we serve, upholding their autonomy and promoting their independence with dignity and respect.</li>
@@ -60,13 +60,13 @@ const Vision = () => {
 
         {/* mission  */}
         <div className='mission w-[90%] flex  flex-col md:flex-row gap-4  md:gap-10 justify-center items-center mt-10'>
-        <h3 className='md:hidden flex font-bold text-2xl text-[#D85720] '> Mission Statement </h3>
+        <h3 className='md:hidden flex font-bold text-2xl text-[#b69d11] '> Mission Statement </h3>
              <div className="missionright flex w-[90%] md:w-[35%] border-[10px] ">
                 <img src={missionImg} alt="vision-img" />
             </div>
             
             <div className='missionleft flex flex-col md:w-[60%] text-[#2f1a4e] gap-2 text-justify '>
-                 <h3 className=' hidden md:flex font-bold text-2xl text-[#D85720] '> Mission Statement: </h3>
+                 <h3 className=' hidden md:flex font-bold text-2xl text-[#b69d11] '> Mission Statement: </h3>
                  <p>Confidence Personal Homecare Services is dedicated to enriching the lives of seniors by providing compassionate, personalized, and high-quality in-home care services. Our mission is to empower seniors to age with dignity and independence in the comfort of their own homes while fostering meaningful connections, promoting joyful living, and ensuring the highest standards of care. Through a collaborative and client-centered approach, we strive to exceed expectations, uphold integrity, and continuously improve our services to meet the evolving needs of our clients and their families. We are committed to making a positive difference in the lives of those we serve, one moment, one smile, and one family at a time.</p>
             </div>
             

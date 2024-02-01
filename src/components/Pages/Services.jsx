@@ -10,7 +10,7 @@ const Services = () => {
       <div className="servicesContent w-full flex flex-col justify-center ">
       {/* text-[#cf8d70]  */} 
       {/* bg-[#23113e]  */}
-        <div className=' servicesIntro flex flex-col h-fit px-[5%] py-6 text-[#f7e7e0] '>
+        <div className=' servicesIntro flex flex-col h-[50vh] px-[5%] py-6  text-[#e1ca47] '>
 
           <h3 className='text-center pb-10 text-4xl md:text-6xl font-bold ' >Our Services</h3>
           <p>
@@ -23,10 +23,10 @@ const Services = () => {
         </div>
 
         {/* bg-[#e26c3a] */}
-        <div className='servicesbody flex flex-col w-full px-[5%] text-black py-20 gap-8 text-lg bg-[#fbfbfc]'>
+        <div className='servicesbody flex flex-col w-[95%] m-[2.5%] my-16 p-4 text-black  gap-8 text-lg bg-[#fbfbfc] border-[5px] border-purple-300'>
           <div>
               {/* <hr className='bg-[#ef7541] ' /> */}
-                <p className='text-2xl font-bold ' >Companionship Care:</p> 
+                <p className='text-2xl font-bold text-[#b69d11] ' >Companionship Care:</p> 
                 <p className='text-lg flex flex-col text-left gap-3 '>
                   <li>Confidence Personal Homecare Services tailors companionship and attentive supervision specifically to seniors and individuals requiring home care due to illness, injury, or cognitive diseases.</li>
                   <li>Our comprehensive services include emotional support, participation in preferred activities, and providing companionship to alleviate feelings of isolation.</li>
@@ -38,7 +38,7 @@ const Services = () => {
         
           <div>
           {/* <hr /> */}
-              <p className='text-2xl font-bold ' >Personal Care:</p> 
+              <p className='text-2xl font-bold text-[#b69d11]' >Personal Care:</p> 
               <p className='text-lg'>
                 Personal Care stands as a cornerstone service within the realm of home care. It encompasses aiding individuals in their daily activities, thereby fostering 
                 a sense of ease and tranquility in the lives of the elderly. 
@@ -47,7 +47,7 @@ const Services = () => {
           </div>
 
           <div>
-            <p className='text-2xl font-bold' >Personal Assitance:</p> 
+            <p className='text-2xl font-bold text-[#b69d11]' >Personal Assitance:</p> 
             <p className='text-lg'>
              Moreover, drawing from our wealth of experience in delivering personalized care programs, we extend support to 
             individuals within the familiar surroundings of their homes. Our array of personal assistance services encompasses:
@@ -66,7 +66,7 @@ const Services = () => {
           </div>
 
           <div>
-            <p className='text-2xl font-bold' >Household Assistance:</p> 
+            <p className='text-2xl font-bold text-[#b69d11]' >Household Assistance:</p> 
             <p>At our service, we take pride in maintaining the cleanliness and safety of your home, offering 
                 round-the-clock support, seven days a week. Whether you're just beginning to explore in-home 
                 assistance or seeking ongoing care, our homemaking services ensure a comfortable and secure 
@@ -92,7 +92,7 @@ const Services = () => {
 
 
           <div>
-            <p className='text-2xl font-bold' >Household Responsibilities:</p>
+            <p className='text-2xl font-bold text-[#b69d11]' >Household Responsibilities:</p>
               <p className='text-lg'>Home care services encompass various household chores and cleaning tasks, whereas
                   home health care primarily focuses on aiding individuals in their recovery from 
                   illness or injury. Professionals in home health care typically include home health 
@@ -102,7 +102,7 @@ const Services = () => {
 
 
           <div>
-            <p className='text-2xl font-bold'> Meal Preparation Support:</p>
+            <p className='text-2xl font-bold text-[#b69d11]'> Meal Preparation Support:</p>
        
             <p className='text-lg'>At Confidence Personal Homecare Services, we provide professional assistance with
             meal preparation daily and weekly, ensuring our clients have nourishing meals ready 

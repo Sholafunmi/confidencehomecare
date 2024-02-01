@@ -62,10 +62,22 @@ body {
 .servicesIntro{
   background-position: center ;
   background-size: cover;
-  background: linear-gradient(rgba(98, 32, 3, 0.5), rgba(13, 1, 32, 0.5)), no-repeat url('./assets/images/pic5.jpg');
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(98, 77, 3, 0.5), rgba(15, 1, 38, 0.5)), url('./assets/images/pic5.jpg');
+}
+
+.aboutintro{
+   background-image: url('./assets/images/istockphoto-6.jpg');
+  background-position: center ;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* background: linear-gradient(rgba(211, 204, 201, 0.5), rgba(223, 219, 229, 0.5)); */
 }
 
 
+/* gold color code  */
+/* #b69d11 */
 
 
 

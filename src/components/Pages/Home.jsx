@@ -3,7 +3,8 @@ import Navbar from '../Home/Navbar'
 import Hero from '../Home/Hero'
 import Vision from '../Home/Vision'
 import Features from '../Home/Features'
-import About from './About'
+// import About from './About'
+import ServicesHome from '../Home/ServicesHome'
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
         <Hero />
         <Features/>
         <Vision />
+        <ServicesHome />
         {/* <About /> */}
     </div>
   )

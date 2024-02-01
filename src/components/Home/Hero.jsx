@@ -26,7 +26,7 @@ const Hero = () => {
                         merely a destination but a holistic lifestyle.
                     </p> 
                     
-                    <a className='btn w-fit text-[#d85720] bg-[#fff] font-bold text-lg p-3 rounded-tr-[20px] rounded-bl-[20px] ' href="">Learn More</a>
+                    <a className='btn w-fit text-[#b69d11] bg-[#fff] font-bold text-lg p-3 rounded-tr-[20px] rounded-bl-[20px] ' href="">Learn More</a>
 
                 </div>
                 {/* <Button text="Follow" className="text-[#fffff0] rounded"/> */}
