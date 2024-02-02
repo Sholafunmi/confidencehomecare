@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav>
       <div className='w-full h-[120px] flex justify-between md:justify-start md:gap-[15%] lg:gap-[20%] items-center px-2 md:px-[5%] bg-[#fff] text-gray-300 '>
          <Link   to="/"  smooth={true} offset={50} duration={500} >
-          <img className='w-[220px] lg:w-[350px] md:w-[250px]' src={Logo} alt="brand Logo" />
+          <img className='logo w-[250px] lg:w-[350px] md:w-[250px]' src={Logo} alt="brand Logo" />
          </Link>
 
         {/* <div>
@@ -54,7 +54,7 @@ const Navbar = () => {
 
         {/* HAMBURGER  */}
         {/* bg-[#150330] */}
-        <div onClick={openMenu} className="md:hidden z-10 text-4xl text-[#9256ed] px-2 py-2 border-2 rounded-tr-[25px] rounded-bl-[25px] border-[#9256ed]  ">
+        <div onClick={openMenu} className="md:hidden cursor-pointer z-10 text-4xl text-[#b69d11] px-2 py-2 border-2 rounded-tr-[10px] rounded-bl-[10px] border-[#b69d11]  ">
           {!nav ? <FaBars /> : <FaTimes />}
         </div>
 

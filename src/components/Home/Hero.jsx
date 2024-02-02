@@ -1,7 +1,6 @@
 import React from 'react'
-// import image1 from '../assets/images/istockphoto-1.jpg'
 import image1 from '../../assets/images/istockphoto-1.jpg'
-import Button from '../About/Button';
+import Button from './Button'
 
 import { Link } from 'react-scroll';
 
@@ -16,27 +15,24 @@ const Hero = () => {
                  <img className='md:w-[75%]' src={image1} alt="hero-image" />
             </div>
 
-            <div className="introText relative mt-[-10%] md:mt-[3%] md:absolute md:top-[13%] w-[80%] md:w-[50%] h-fit md:h-[450px] ml-14 md:ml-[45%] flex justify-center items-center bg-[#7036c7] p-4 md:p-16   rounded-tl-[50px] rounded-bl-[0px]"> 
-            {/* bg-[#d85720] */}
+            <div className="introText relative mt-[-10%] md:mt-[3%] md:absolute md:top-[13%] w-[80%] md:w-[50%] h-fit md:h-[450px] ml-14 md:ml-[45%] flex justify-center items-center bg-[#b69d11] p-4 md:p-16   rounded-tl-[50px] rounded-bl-[0px]"> 
+            {/* bg-[#d85720] */} 
+            {/* purple color bg #7036c7 */}
                 <div className='flex flex-col text-gray-50 gap-2 md:gap-6 '>
                    <p className='text-2xl md:text-5xl font-bold '>Recognizing life as a precious gift</p>  
-                    <p className='text-[20px]'>
+                    <p className='text-lg md:text-[25px] text-justify'>
                     
                     At Confidence Personal Homecare Services, we understand that healing is not 
                         merely a destination but a holistic lifestyle.
                     </p> 
                     
-                    <a className='btn w-fit text-[#b69d11] bg-[#fff] font-bold text-lg p-3 rounded-tr-[20px] rounded-bl-[20px] ' href="">Learn More</a>
-
+                    {/* <a className='btn w-fit text-[#b69d11] bg-[#fff] font-bold text-lg p-3 rounded-tr-[20px] rounded-bl-[20px] ' href="">Learn More</a> */}
+                    <Button text={'Learn More'} />
                 </div>
                 {/* <Button text="Follow" className="text-[#fffff0] rounded"/> */}
             
 
-            </div>
-
-            {/* bg-[#6137cc]  */}
-            {/* bg-[#150330] */}
-        
+            </div>    
         </div>
 
         

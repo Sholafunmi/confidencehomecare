@@ -10,11 +10,11 @@ const Services = () => {
       <div className="servicesContent w-full flex flex-col justify-center ">
       {/* text-[#cf8d70]  */} 
       {/* bg-[#23113e]  */}
-        <div className=' servicesIntro flex flex-col h-[50vh] px-[5%] py-6  text-[#e1ca47] '>
+        <div className=' servicesIntro flex flex-col h-fit md:min-h-[50vh] px-[5%] py-6  text-[#e1ca47] '>
 
-          <h3 className='text-center pb-10 text-4xl md:text-6xl font-bold ' >Our Services</h3>
+          <h3 className='self-center mb-10 text-4xl  md:text-6xl font-bold text-gray-50  border-b  border-[#e1ca47] ' >Our Services</h3>
           <p>
-              <p className='text-lg font-bold text-center'>
+              <p className=' text-[18px] md:text-[30px] text-gray-50 font-bold text-center'>
                 Confidence Personal Homecare Services specializes in providing companionship and attentive 
                 supervision for seniors and individuals requiring home care due to conditions like illness, injury, or cognitive diseases.
                 Our commitment is to offer a unique blend of personalized attention and a diverse range of activities to enhance the well-being and companionship of our valued clients. 

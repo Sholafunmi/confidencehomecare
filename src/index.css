@@ -10,14 +10,12 @@ body {
   place-items: center; */
   
 }
-.btn:hover{
-  background:#a54014;
-  color: #fff;
-}
+
 .menuItem:hover{
   font-weight: bold;
-  /* border-bottom: 5px; */
-  /* border-color:#a54014; */
+  /* color: #b69d11; */
+  border-bottom:solid 3px #b69d11;
+  /* border-color:; */
   
  
 }
@@ -63,22 +61,29 @@ body {
   background-position: center ;
   background-size: cover;
   background-repeat: no-repeat;
-  background: linear-gradient(rgba(98, 77, 3, 0.5), rgba(15, 1, 38, 0.5)), url('./assets/images/pic5.jpg');
+  background-image: linear-gradient(rgba(98, 77, 3, 0.5), rgba(15, 1, 38, 0.5)), url('./assets/images/pic5.jpg');
+  /* background-image: url('./assets/images/pic5.jpg'); */
 }
 
 .aboutintro{
    background-image: url('./assets/images/istockphoto-6.jpg');
-  background-position: center ;
+  background-position: center;
+  background-position-y: 30%;
   background-size: cover;
   background-repeat: no-repeat;
-
   /* background: linear-gradient(rgba(211, 204, 201, 0.5), rgba(223, 219, 229, 0.5)); */
+}
+Button:hover{
+  background-color: rgb(243, 234, 234) ;
+  color:#b69d11;
+  border-bottom:solid 3px #b69d11;
 }
 
 
 /* gold color code  */
 /* #b69d11 */
-
+/* bg-[#6137cc]  */
+/* bg-[#150330] */
 
 
 /* :root {

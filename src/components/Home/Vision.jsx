@@ -1,6 +1,8 @@
 import React from 'react'
 import visionImg from '../../assets/images/istockphoto-4.jpg';
 import missionImg from '../../assets/images/istockphoto5.jpg';
+import Button from './Button';
+import { Link } from 'react-router-dom';
 
 
 const Vision = () => {
@@ -67,12 +69,23 @@ const Vision = () => {
             
             <div className='missionleft flex flex-col md:w-[60%] text-[#2f1a4e] gap-2 text-justify '>
                  <h3 className=' hidden md:flex font-bold text-2xl text-[#b69d11] '> Mission Statement: </h3>
-                 <p>Confidence Personal Homecare Services is dedicated to enriching the lives of seniors by providing compassionate, personalized, and high-quality in-home care services. Our mission is to empower seniors to age with dignity and independence in the comfort of their own homes while fostering meaningful connections, promoting joyful living, and ensuring the highest standards of care. Through a collaborative and client-centered approach, we strive to exceed expectations, uphold integrity, and continuously improve our services to meet the evolving needs of our clients and their families. We are committed to making a positive difference in the lives of those we serve, one moment, one smile, and one family at a time.</p>
+                    <p>Confidence Personal Homecare Services is dedicated to enriching the lives of seniors by providing 
+                        compassionate, personalized, and high-quality in-home care services. Our mission is to empower seniors to age with dignity 
+                        and independence in the comfort of their own homes while fostering meaningful connections, promoting joyful living, and
+                        ensuring the highest standards of care. Through a collaborative and client-centered approach, we strive to exceed 
+                        expectations, uphold integrity, and continuously improve our services to meet the evolving needs of our clients and
+                        their families. We are committed to making a positive difference in the lives of those we serve, one moment, 
+                        one smile, and one family at a time.
+                   </p>
             </div>
             
            
            
         </div>
+        <Link to={'./about'}>
+           <Button text={'See More Abou Us'} /> 
+        </Link>
+        
 
 
     </div>
