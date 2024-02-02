@@ -2,12 +2,12 @@ import React from 'react'
 import image1 from '../../assets/images/istockphoto-2.jpg'
 import image2 from '../../assets/images/pic5.jpg'
 import image3 from '../../assets/images/istockphoto-5.jpg'
-import Button from './Button'
+import Button from '../Home/Button'
 import { Link } from 'react-router-dom'
 
 const ServicesHome = () => {
   return (
-    <div className='w-full flex flex-col h-fit bg-[#b69d11] justify-center items-center pt-10 pb-16 gap-12 md:gap-10 gap-4 '>
+    <div className='w-full flex flex-col h-fit bg-[#b69d11] justify-center items-center pt-10 pb-16 gap-12 md:gap-10 md:gap-4 '>
         <h3 className='text-gray-50 text-2xl md:text-4xl font-bold  md:mb-6'>Services That We Offer</h3>
         {/* firstbox  */}
         <div className="first flex flex-col md:flex-row  w-[90%] h-fit md:min-h-[50vh] justify-center items-center text-gray-50 gap-[10%]">
@@ -16,7 +16,7 @@ const ServicesHome = () => {
             </div>
 
             <div className="right w-full md:w-[50%] h-fit">
-                <h3 className='text-2xl md:text-3xl'>Companionship Care</h3>
+                <h3 className='text-2xl md:text-3xl font-bold'>Companionship Care</h3>
                 <p className=' text-lg md:text-2xl flex text-justify '>Confidence Personal Homecare Services tailors companionship and 
                 attentive supervision specifically to seniors and individuals requiring 
                 home care due to illness, injury, or cognitive diseases.
@@ -31,7 +31,7 @@ const ServicesHome = () => {
                 </div>
 
                 <div className="right w-full md:w-[50%] h-fit">
-                    <h3 className='text-2xl md:text-3xl'>Personal Care</h3>
+                    <h3 className='text-2xl md:text-3xl font-bold'>Personal Care</h3>
                     <p className='text-lg md:text-2xl flex text-justify '>Personal Care stands as a cornerstone service within the realm of home care. It encompasses aiding individuals in their daily activities, thereby fostering 
                 a sense of ease and tranquility in the lives of the elderly.
                     </p>
@@ -45,7 +45,7 @@ const ServicesHome = () => {
             </div>
 
             <div className="right w-full md:w-[50%]">
-                <h3 className='text-2xl md:text-3xl'>Household Assistance</h3>
+                <h3 className='text-2xl md:text-3xl font-bold'>Household Assistance</h3>
                 <p className='text-lg md:text-2xl flex text-justify '>At our service, we take pride in maintaining the cleanliness and safety of your home, offering 
                 round-the-clock support, seven days a week.
                 </p>
