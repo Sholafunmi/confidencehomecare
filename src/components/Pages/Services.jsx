@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Home/Navbar'
+import Footer from '../Home/Footer'
 
 
 const Services = () => {
@@ -115,6 +116,7 @@ const Services = () => {
       </div>
 
       {/* import footer  */}
+      <Footer />
     </div>
     
   )

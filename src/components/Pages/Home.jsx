@@ -3,9 +3,8 @@ import Navbar from '../Home/Navbar'
 import Hero from '../Home/Hero'
 import Vision from '../Home/Vision'
 import Features from '../Home/Features'
-// import About from './About'
 import ServicesHome from '../Home/ServicesHome'
-import Contact from './Contact'
+import Footer from '../Home/Footer'
 
 
 const Home = () => {
@@ -16,6 +15,7 @@ const Home = () => {
         <Features/>
         <Vision />
         <ServicesHome />
+        <Footer />
         
     </div>
   )

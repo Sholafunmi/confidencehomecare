@@ -2,15 +2,16 @@ import React from 'react'
 import Navbar from '../Home/Navbar'
 import Button from '../Home/Button'
 import { Link } from 'react-router-dom'
+import Footer from '../Home/Footer'
 
 const Contact = () => {
   return (
-    <div  className='contact w-full h-fit flex flex-col h-fit md:min-h-screen'>
+    <div className='contact w-full h-fit flex flex-col h-fit md:min-h-screen'>
       <Navbar />
 
       <div className="leftRight w-full h-fit flex flex-col md:flex-row justify-center gap-12 md:gap-32 md:py-20  py-12 px-[5%]">
         <div className="companyInfo flex flex-col w-full md:w-[40%] gap-4 text-[#b69d11]">
-        <h2 className='text-2xl flex font-bold'>Confidence Personal Homecare Services LLC</h2>
+        <h1 className='text-2xl flex font-bold'>Confidence Personal Homecare Services LLC</h1>
           <div className="address text-xl">
             <p>Address:</p>
             <p>xxx Indianapolis xxx </p>
@@ -36,7 +37,7 @@ const Contact = () => {
        </div>
 
       {/* contact form  */}
-       <div className="contactForm text-[#b69d11] flex flex-col gap-4">
+       <div className="contactForm flex flex-col gap-4">
         <h3 className='text-2xl font-bold'>Contact Us Today!</h3>
         <p>Fill the form below, we would definitely get back to you</p>
         
@@ -46,22 +47,22 @@ const Contact = () => {
           <div className='flex flex-col md:flex-row gap-6'> 
             <div className="name flex flex-col">
               <label htmlFor="name">First Name</label>
-              <input className='border border-[#9256ed] ' type="text" />
+              <input className='border border-[#0a0511] ' type="text" />
             </div>
             <div className='flex flex-col'>
               <label htmlFor="name">Last Name</label>
-              <input className='border border-[#9256ed]' type="text" />
+              <input className='border border-[#0a0511]' type="text" />
             </div>
           </div>
           {/* email  */}
             <div className='mail flex flex-col'>
               <label htmlFor="email">Email</label>
-              <input className='border border-[#9256ed]' type="email" name="" id="" />
+              <input className='border border-[#0a0511]' type="email" name="" id="" />
             </div>
             {/* message  */}
             <div className="message flex flex-col">
               <label htmlFor="message">Message</label>
-              <textarea className='border border-[#9256ed]'  name="message" id="" cols="30" rows="10"></textarea>
+              <textarea className='border border-[#0a0511]'  name="message" id="" cols="30" rows="10"></textarea>
             </div>
 
             <Link to="/services" smooth={true} offset={50} duration={500} >
@@ -81,6 +82,7 @@ const Contact = () => {
 
        </div>
       </div>
+        <Footer />
        
     </div>
   )

@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Home/Navbar'
-// import abouting from '../../assets/images/img1.jpg'
+import Footer from '../Home/Footer'
+
 
 
 const About = () => {
@@ -25,15 +26,9 @@ const About = () => {
 
 
         </main>
-      
-
-
       </div>
 
-
-    
- 
-    
+      <Footer />
     </div>
   )
 }

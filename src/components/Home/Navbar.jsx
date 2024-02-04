@@ -54,35 +54,35 @@ const Navbar = () => {
 
         {/* HAMBURGER  */}
         {/* bg-[#150330] */}
-        <div onClick={openMenu} className="md:hidden cursor-pointer z-10 text-4xl text-[#b69d11] px-2 py-2 border-2 rounded-tr-[10px] rounded-bl-[10px] border-[#b69d11]  ">
+        <div onClick={openMenu} className="md:hidden cursor-pointer z-10 text-2xl text-[#b69d11] px-1 py-1 border-2 rounded-tr-[10px] rounded-bl-[10px] border-[#b69d11]  ">
           {!nav ? <FaBars /> : <FaTimes />}
         </div>
 
         {/* MOBILE MENU  */}
          
-           <ul className={!nav ? 'hidden' : '  absolute top-0 left-0 w-full h-screen bg-[#2c1353] text-gray-50 flex flex-col justify-center items-center text-3xl gap-8 '}>
+           <ul className={!nav ? 'hidden' : '  absolute top-0 left-0 w-full h-screen text-[#2c1353] bg-gray-100 flex flex-col pt-24 pl-5 text-xl gap-8 '}>
            
            
-           <li  className='menuItem'>
+           <li  className='menuItem w-fit'>
                 <Link   to="/"  smooth={true} offset={50} duration={500} >
                   Home
                 </Link>
               </li>
 
 
-              <li  className=' menuItem'>
+              <li  className=' menuItem w-fit'>
                 <Link  to="/services "  smooth={true} offset={50} duration={500} >
                   Services
                 </Link>
               </li>
 
-              <li className=' menuItem'>
+              <li className=' menuItem w-fit'>
                 <Link  to="/about"  smooth={true} offset={50} duration={500} >
                   About Us
                 </Link>
               </li>
 
-              <li className='menuItem'>
+              <li className='menuItem w-fit'>
                 <Link  to="/contact"  smooth={true} offset={50} duration={500} >
                   Contact Us
                 </Link>
