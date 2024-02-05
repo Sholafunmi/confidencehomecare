@@ -68,8 +68,8 @@ const Navbar = () => {
            <ul className={!nav ? 'hidden' : '  absolute top-0 left-0 w-full h-screen text-[#2c1353] bg-gray-100 flex flex-col pt-28 pl-5 text-xl gap-8'}>
               {
                 navObj.map((item, i)=>(
-                  <li  className='menuItem w-fit' onClick={openMenu}>
-                <Link to={item.path} key={i}  smooth={true} offset={50} duration={500} >
+                  <li  className='menuItem w-full' onClick={openMenu}>
+                <Link to={item.path} key={i} onClick={scrollToTop}  >
                   {item.display}
                 </Link>
               </li>

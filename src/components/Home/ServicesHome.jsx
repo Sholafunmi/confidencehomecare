@@ -11,10 +11,10 @@ const ServicesHome = () => {
         scroll.scrollToTop();
       };
   return (
-    <div className='w-full flex flex-col h-fit bg-[#F3F5FA] justify-center items-center pt-10 pb-16 gap-12 md:gap-10 md:gap-4 '>
+    <div className='w-full flex flex-col h-fit bg-[#F3F5FA] justify-center items-center pt-10 pb-16 gap-12 md:gap-10 '>
         <h3 className='text-[#9256ed] text-2xl md:text-4xl font-bold  md:mb-6'>Services That We Offer</h3>
         {/* firstbox  */}
-        <div className="first flex flex-col md:flex-row  w-[90%] h-fit md:min-h-[50vh] justify-center items-center gap-[10%]">
+        <div className="first flex flex-col md:flex-row  w-[90%] h-fit md:min-h-[50vh] justify-center items-center gap-4 md:gap-[10%]">
             <div className="left w-full md:w-[50%] hit-fit">
                 <img src={image1} alt="" />
             </div>
@@ -29,7 +29,7 @@ const ServicesHome = () => {
         </div>
 
             {/* second box  */}
-            <div className="first flex flex-col md:flex-row-reverse w-[90%] h-fit md:min-h-[50vh] justify-center items-center gap-[10%]">
+            <div className="first flex flex-col md:flex-row-reverse w-[90%] h-fit md:min-h-[50vh] justify-center items-center gap-4 md:gap-[10%]">
                 <div className="left w-full md:w-[50%] h-fit">
                     <img src={image2} alt="" />
                 </div>
@@ -43,7 +43,7 @@ const ServicesHome = () => {
             </div>
 
             {/* third box  */}
-            <div className="first flex flex-col md:flex-row w-[90%] h-fit md:min-h-[50vh] justify-center items-center gap-[10%]">
+            <div className="first flex flex-col md:flex-row w-[90%] h-fit md:min-h-[50vh] justify-center items-center gap-4 md:gap-[10%]">
             <div className="left w-full md:w-[50%] h-fit">
                 <img src={image3} alt="" />
             </div>

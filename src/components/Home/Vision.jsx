@@ -22,12 +22,12 @@ const Vision = () => {
                 <img src={visionImg} alt="vision-img" />
             </div>
 
-            <div className='visionleft flex flex-col md:w-[60%] text-[#2f1a4e] gap-2 text-justify'>
+            <div className='visionleft flex flex-col md:w-[60%] text-[#2f1a4e] text-lg gap-2 text-justify'>
                  <h3 className='hidden md:flex font-bold text-2xl text-[#b69d11] '>OUR VISION </h3>
-                <li>At Confidence Personal Homecare Services, we envision a world where every individual's journey through life is met with dignity, comfort, and joy.</li>
-                <li>Our mission is to enrich the lives of our clients by providing unparalleled in-home care services tailored to seniors' unique needs. With a steadfast commitment to excellence, we prioritize the well-being of those in our care and their families, navigating the complexities of aging with compassion and expertise.</li>
-                <li>Recognizing life as a precious gift, we embrace the opportunity to make each moment meaningful, fostering connections and nurturing relationships that brighten lives. Our client-centered approach ensures that every interaction is infused with empathy and respect, touching hearts, inspiring smiles, and strengthening families one day at a time.</li>
-                <li>At Confidence Personal Homecare Services, we understand that healing is not merely a destination but a holistic lifestyle. With us, you can have confidence in the quality of care you receive, knowing that your well-being is our top priority.</li>
+                <li>At <strong>Confidence Personal Homecare Services</strong>, we envision a world where every individual's journey through life is met with dignity, comfort, and joy.</li>
+                <li>Our mission is to enrich the lives of our clients by providing unparalleled in-home care services tailored to seniors' unique needs. With a steadfast <strong>commitment to excellence,</strong> we prioritize the well-being of those in our care and their families, navigating the complexities of aging with compassion and expertise.</li>
+                <li><strong>Recognizing life as a precious gift</strong>, we embrace the opportunity to make each moment meaningful, fostering connections and nurturing relationships that brighten lives. Our client-centered approach ensures that every interaction is infused with empathy and respect, touching hearts, inspiring smiles, and strengthening families one day at a time.</li>
+                <li>At Confidence Personal Homecare Services, we understand that <strong>healing is not merely a destination but a holistic lifestyle</strong>. With us, you can have confidence in the quality of care you receive, knowing that your well-being is our top priority.</li>
             </div>
             
             
@@ -42,18 +42,18 @@ const Vision = () => {
             <div className="valuesright md:hidden w-[90%] md:w-[35%] h-[200px] md:min-h-[70vh] border-[10px]">
         
             </div>
-            <div className="valuesleft flex flex-col w-[90%] md:w-[60%] text-[#2f1a4e] gap-2 text-justify">
+            <div className="valuesleft flex flex-col w-[90%] md:w-[60%] text-[#2f1a4e] text-lg gap-2 text-justify">
                 <h3 className='hidden md:flex font-bold text-2xl text-[#b69d11]' >VALUES:</h3>
-                <li>Compassion: We demonstrate empathy and kindness in every interaction, understanding and addressing the unique needs of each individual with warmth and sensitivity.</li>
-                <li>Excellence: We are dedicated to delivering exceptional care services of the highest quality, consistently striving for excellence in all aspects of our work.</li>
-                <li>Dignity: We respect the inherent worth and dignity of every person we serve, upholding their autonomy and promoting their independence with dignity and respect.</li>
-                <li>Integrity: We conduct ourselves with honesty, transparency, and integrity, earning the trust of our clients, their families, and our community through ethical behavior and accountability.</li>      
-                <li>Collaboration: We believe in the power of collaboration and teamwork, working closely with clients, their families, healthcare professionals, and community resources to ensure holistic and comprehensive care.</li>
-                <li>Personalized Care: We recognize the individuality of each client and tailor our services to meet their specific needs and preferences, honoring their unique preferences, cultural backgrounds, and lifestyles.</li>
+                <li><strong>Compassion:</strong> We demonstrate empathy and kindness in every interaction, understanding and addressing the unique needs of each individual with warmth and sensitivity.</li>
+                <li><strong>Excellence:</strong> We are dedicated to delivering exceptional care services of the highest quality, consistently striving for excellence in all aspects of our work.</li>
+                <li><strong>Dignity:</strong> We respect the inherent worth and dignity of every person we serve, upholding their autonomy and promoting their independence with dignity and respect.</li>
+                <li><strong>Integrity:</strong> We conduct ourselves with honesty, transparency, and integrity, earning the trust of our clients, their families, and our community through ethical behavior and accountability.</li>      
+                <li><strong>Collaboration:</strong> We believe in the power of collaboration and teamwork, working closely with clients, their families, healthcare professionals, and community resources to ensure holistic and comprehensive care.</li>
+                <li><strong>Personalized Care:</strong> We recognize the individuality of each client and tailor our services to meet their specific needs and preferences, honoring their unique preferences, cultural backgrounds, and lifestyles.</li>
 
-                <li> Continuous Improvement: We are committed to ongoing learning and professional development, continuously seeking opportunities to enhance our skills, knowledge, and practices to better serve our clients and their families.</li>
+                <li><strong>Continuous Improvement:</strong>  We are committed to ongoing learning and professional development, continuously seeking opportunities to enhance our skills, knowledge, and practices to better serve our clients and their families.</li>
 
-                <li> Joyful Living: We celebrate life's moments and promote joy and companionship in all aspects of our care, fostering a positive and uplifting environment that enhances the well-being of our clients and their families.
+                <li><strong>Joyful Living:</strong>  We celebrate life's moments and promote joy and companionship in all aspects of our care, fostering a positive and uplifting environment that enhances the well-being of our clients and their families.
     T           hese values serve as guiding principles for Confidence Personal Homecare Services, shaping our culture, guiding our actions, and defining our commitment to excellence in homecare.</li>
         
             </div>
@@ -72,13 +72,13 @@ const Vision = () => {
                 <img src={missionImg} alt="vision-img" />
             </div>
             
-            <div className='missionleft flex flex-col md:w-[60%] text-[#2f1a4e] gap-2 text-justify '>
+            <div className='missionleft flex flex-col md:w-[60%] text-[#2f1a4e] text-lg gap-2 text-justify '>
                  <h3 className=' hidden md:flex font-bold text-2xl text-[#b69d11] '> Mission Statement: </h3>
-                    <p>Confidence Personal Homecare Services is dedicated to enriching the lives of seniors by providing 
-                        compassionate, personalized, and high-quality in-home care services. Our mission is to empower seniors to age with dignity 
-                        and independence in the comfort of their own homes while fostering meaningful connections, promoting joyful living, and
+                    <p>Confidence Personal Homecare Services is <strong>dedicated</strong> to <strong>enriching the lives of seniors by providing 
+                        compassionate, personalized, and high-quality in-home care services</strong>. Our <strong>mission</strong> is to empower seniors to <strong>age with dignity and independence </strong>  
+                        in the comfort of their own homes while fostering meaningful connections, promoting <strong>joyful living</strong>, and
                         ensuring the highest standards of care. Through a collaborative and client-centered approach, we strive to exceed 
-                        expectations, uphold integrity, and continuously improve our services to meet the evolving needs of our clients and
+                        expectations, uphold <strong>integrity, and continuously improve our services </strong> to meet the evolving needs of our clients and
                         their families. We are committed to making a positive difference in the lives of those we serve, one moment, 
                         one smile, and one family at a time.
                    </p>

@@ -1,10 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-import { Router, Route } from 'react-router-dom';
+import { Link, Router, Route } from 'react-router-dom';
 
 
 
 const Features = () => {
+   // scroll
+   const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <div className='features w-full h-fit md:flex justify-center items-center mt-14 py-6 md:py-20 md:gap-10 ' >
          
@@ -21,41 +25,47 @@ const Features = () => {
                             </div>
                         </Link> */}
 
-                        <div name='servicebox' className="aboutbox flex-col w-[95%] h-[350px] md:w-[28%] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11]  ">
-                          <a className="servicesTop h-[80%] w-full flex "href="/services">
-                              
-                          </a>
+                        <Link to={'/services'} onClick={scrollToTop} className='md:w-[28%]'>
+                          <div name='servicebox' className="aboutbox flex-col w-[95%] h-[350px] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11]  ">
+                            <div className="servicesTop h-[80%] w-full flex">
+                                
+                            </div>
 
-                          <div className='servicesBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] '>
-                              <a className='flex items-center font-bold text-[20px]' href="/services">Services</a>
+                            <div className='servicesBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] '>
+                                <p className='flex items-center font-bold text-[20px]'>Services</p>
+                            </div>
+
                           </div>
 
-                        </div>
+                        </Link>
+                       
+                        <Link to={'/about'} onClick={scrollToTop} className='md:w-[28%]'>
+                          <div name='aboutbox' className="aboutbox flex-col w-[95%] h-[350px] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11]  ">
+                                <div className="aboutTop h-[80%] w-full flex">
+                                    
+                                </div>
+
+                                <div className='aboutBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] '>
+                                    <p className='flex items-center font-bold text-[20px]' >About Us</p>
+                                </div>
+
+                          </div>
+                        </Link>
 
 
 
-                   <div name='aboutbox' className="aboutbox flex-col w-[95%] h-[350px] md:w-[28%] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11]  ">
-                        <a className="aboutTop h-[80%] w-full flex "href="/about">
-                            
-                        </a>
+                        <Link to={'/contact'} onClick={scrollToTop} className='md:w-[28%]'>
+                          <div name='contactbox' className="contactbox flex-col w-[95%] h-[350px] md:w-[] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11] ">
+                                <div className="contactTop h-[80%] w-full flex "href="/contact">
+                                
+                                </div>
 
-                        <div className='aboutBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] '>
-                            <a className='flex items-center font-bold text-[20px]' href="/about">About Us</a>
-                        </div>
+                                <div className='contactBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] '>
+                                    <p className='flex items-center font-bold text-[20px] ' href="/contact">Contact Us</p>
+                                </div>
 
-                   </div>
-
-                 
-                   <div name='contactbox' className="contactbox flex-col w-[95%] h-[350px] md:w-[28%] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11] ">
-                        <a className="contactTop h-[80%] w-full flex "href="/contact">
-                        
-                        </a>
-
-                        <div className='contactBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] '>
-                            <a className='flex items-center font-bold text-[20px] ' href="/contact">Contact Us</a>
-                        </div>
-
-                   </div>
+                          </div>
+                        </Link> 
 
               
                    
