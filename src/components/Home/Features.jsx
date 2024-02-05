@@ -25,7 +25,7 @@ const Features = () => {
                             </div>
                         </Link> */}
 
-                        <Link to={'/services'} onClick={scrollToTop} className='md:w-[28%]'>
+                        <Link to='/services' onClick={scrollToTop} className='md:w-[28%]'>
                           <div name='servicebox' className="aboutbox flex-col w-[95%] h-[350px] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11]  ">
                             <div className="servicesTop h-[80%] w-full flex">
                                 
@@ -39,7 +39,7 @@ const Features = () => {
 
                         </Link>
                        
-                        <Link to={'/about'} onClick={scrollToTop} className='md:w-[28%]'>
+                        <Link to='/about' onClick={scrollToTop} className='md:w-[28%]'>
                           <div name='aboutbox' className="aboutbox flex-col w-[95%] h-[350px] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11]  ">
                                 <div className="aboutTop h-[80%] w-full flex">
                                     
@@ -54,7 +54,7 @@ const Features = () => {
 
 
 
-                        <Link to={'/contact'} onClick={scrollToTop} className='md:w-[28%]'>
+                        <Link to='/contact' onClick={scrollToTop} className='md:w-[28%]'>
                           <div name='contactbox' className="contactbox flex-col w-[95%] h-[350px] md:w-[] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11] ">
                                 <div className="contactTop h-[80%] w-full flex "href="/contact">
                                 
