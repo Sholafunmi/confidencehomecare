@@ -1,12 +1,9 @@
 import React, {useState} from 'react'
 // import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-// import Navbar from './components/Home/Navbar';
-// import Hero from './components/Home/Hero'
-// import Vision from './components/Home/Vision';
-// import Services from './components/Home/Features'
-// import Home from './components/Pages/Home';
 import './index.css'
 import Routers from './Routers';
+import Navbar from './components/Home/Navbar';
+import Footer from './components/Home/Footer';
 
 
 
@@ -15,8 +12,9 @@ function App() {
 
   return (
       <div> 
-        {/* <Home/> */}
+        <Navbar />
         <Routers/>
+        <Footer />
       </div>
   )
 }

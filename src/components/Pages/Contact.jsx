@@ -1,14 +1,10 @@
 import React from 'react'
-import Navbar from '../Home/Navbar'
 import Button from '../Home/Button'
 import { Link } from 'react-router-dom'
-import Footer from '../Home/Footer'
 
 const Contact = () => {
   return (
-    <div className='contact w-full h-fit flex flex-col h-fit md:min-h-screen'>
-      <Navbar />
-
+    <div className='contact w-full flex flex-col h-fit md:min-h-screen pt-[120px] md:pt-[120px]'>
       <div className="leftRight w-full h-fit flex flex-col md:flex-row justify-center gap-12 md:gap-32 md:py-20  py-12 px-[5%]">
         <div className="companyInfo flex flex-col w-full md:w-[40%] gap-4 text-[#b69d11]">
         <h1 className='text-2xl flex font-bold'>Confidence Personal Homecare Services LLC</h1>
@@ -81,9 +77,7 @@ const Contact = () => {
 
 
        </div>
-      </div>
-        <Footer />
-       
+      </div>     
     </div>
   )
 }

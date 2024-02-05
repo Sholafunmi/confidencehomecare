@@ -6,11 +6,8 @@ import Footer from '../Home/Footer'
 const Services = () => {
   return (
     
-    <div id='services' name='services' className='services w-full h-fit flex flex-col justify-center '>
-      <Navbar />
+    <div id='services' name='services' className='services w-full h-fit flex flex-col justify-center pt-[120px] md:pt-[120px] '>
       <div className="servicesContent w-full flex flex-col justify-center ">
-      {/* text-[#cf8d70]  */} 
-      {/* bg-[#23113e]  */}
         <div className=' servicesIntro flex flex-col h-fit md:min-h-[50vh] px-[5%] py-6  text-[#e1ca47] '>
 
           <h3 className='self-center mb-10 text-4xl  md:text-6xl font-bold text-gray-50  border-b  border-[#e1ca47] ' >Our Services</h3>
@@ -114,9 +111,6 @@ const Services = () => {
         </div>
 
       </div>
-
-      {/* import footer  */}
-      <Footer />
     </div>
     
   )

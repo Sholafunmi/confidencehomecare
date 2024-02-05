@@ -1,45 +1,39 @@
 import React from 'react'
 import image1 from '../../assets/images/istockphoto-1.jpg'
 import Button from './Button'
-
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom'
+// import { Link } from 'react-scroll';
 
 const Hero = () => {
   return (
-    <div className='w-full z-[-10] left-0 h-fit md:h-fit relative flex-col justify-center items-center bg-[#fbfbfc] '>
+    <div className='hero  mt-[130px] md:mt-[120px] w-full z-[-10] left-0 h-fit md:h-fit relative flex-col justify-center items-center bg-[#fbfbfc] '>
         
         
         <div className="hero w-full flex-col">
             <div className='top w-[80%] ml-6 md:mt-16 '>
-            {/* md:mt-32 */}
                  <img className='md:w-[75%]' src={image1} alt="hero-image" />
             </div>
 
-            <div className="introText relative mt-[-10%] md:mt-[3%] md:absolute md:top-[13%] w-[80%] md:w-[50%] h-fit md:h-[450px] ml-14 md:ml-[45%] flex justify-center items-center bg-[#b69d11] p-4 md:p-16   rounded-tl-[50px] rounded-bl-[0px]"> 
-            {/* bg-[#d85720] */} 
-            {/* purple color bg #7036c7 */}
+            <div className="introText relative mt-[-10%] md:mt-[3%] md:absolute md:top-[13%] w-[80%] md:w-[50%] h-fit md:h-[450px] ml-14 md:ml-[45%] bg-[#7036c7] flex justify-center items-center p-4 md:p-16 rounded-tl-[50px] rounded-bl-[0px]"> 
                 <div className='flex flex-col text-gray-50 gap-2 md:gap-6 '>
                    <p className='text-2xl md:text-5xl font-bold '>Recognizing life as a precious gift</p>  
-                    <p className='text-lg md:text-[25px] text-justify'>
+                    <p className='text-lg md:text-[25px]'>
                     
                     At Confidence Personal Homecare Services, we understand that healing is not 
                         merely a destination but a holistic lifestyle.
                     </p> 
                     
-                    {/* <a className='btn w-fit text-[#b69d11] bg-[#fff] font-bold text-lg p-3 rounded-tr-[20px] rounded-bl-[20px] ' href="">Learn More</a> */}
-                    <Button text={'Learn More'} />
+                    <Link to={'/services'}>
+                         <Button text={'Learn More'} />
+                    </Link>
+                   
                 </div>
-                {/* <Button text="Follow" className="text-[#fffff0] rounded"/> */}
-            
-
             </div>    
         </div>
 
         
 
-        {/* FEATURES  */}
-        {/* bg-[#A6817D] */}
-        {/* bg-[#d5796d]  */}
+        {/* bg-[#b69d11]  */}
         
 
     </div>

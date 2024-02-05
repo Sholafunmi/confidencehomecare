@@ -7,9 +7,8 @@ import Footer from '../Home/Footer'
 const About = () => {
   return (
     <div  id='about' className='about'>
-    <Navbar />
       <div className="aboutContent w-full h-fit flex flex-col ">
-        <div className="aboutintro w-full h-[50vh] flex justify-center items-center text-gray-50  ">
+        <div className="aboutintro w-full h-[50vh] flex justify-center items-center text-gray-50  mt-[120px] md:mt-[120px]">
           <h3 className='text-6xl font-bold text-[#fff]'>About Us</h3>
         </div>
         <main className='w-[95%] h-fit bg-[#fff] m-[2.5%] mt-10 p-5 text-justify text-lg border-[5px] border-purple-300 '>
@@ -27,8 +26,6 @@ const About = () => {
 
         </main>
       </div>
-
-      <Footer />
     </div>
   )
 }

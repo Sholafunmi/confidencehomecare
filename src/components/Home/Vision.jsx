@@ -3,9 +3,14 @@ import visionImg from '../../assets/images/istockphoto-4.jpg';
 import missionImg from '../../assets/images/istockphoto5.jpg';
 import Button from './Button';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 
 const Vision = () => {
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+      };
+
   return (
     // top-[200vh]  
     <div name='vision' id='vision' className='flex flex-col w-ful h-fit md:px-16 md:py-8 py-6 bg-[#fcfafa] text-[#040404] md:gap-20 gap-4 justify-center items-center md:items-start ' >
@@ -82,8 +87,8 @@ const Vision = () => {
            
            
         </div>
-        <Link to={'./about'}>
-           <Button text={'See More Abou Us'} /> 
+        <Link to={'./about'} onClick={scrollToTop} >
+           <Button text={'See More About Us'} /> 
         </Link>
         
 

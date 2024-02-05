@@ -4,8 +4,12 @@ import image2 from '../../assets/images/pic5.jpg'
 import image3 from '../../assets/images/istockphoto-5.jpg'
 import Button from '../Home/Button'
 import { Link } from 'react-router-dom'
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const ServicesHome = () => {
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+      };
   return (
     <div className='w-full flex flex-col h-fit bg-[#F3F5FA] justify-center items-center pt-10 pb-16 gap-12 md:gap-10 md:gap-4 '>
         <h3 className='text-[#9256ed] text-2xl md:text-4xl font-bold  md:mb-6'>Services That We Offer</h3>
@@ -52,7 +56,7 @@ const ServicesHome = () => {
             </div>
         </div>
         
-        <Link to="/services" smooth={true} offset={50} duration={500} >
+        <Link to="/services" onClick={scrollToTop} >
             <Button text={'See More of Our Services'} />
         </Link>
         

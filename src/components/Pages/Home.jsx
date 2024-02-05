@@ -10,12 +10,10 @@ import Footer from '../Home/Footer'
 const Home = () => {
   return (
     <div name='home' id='home' className='flex flex-col gap-4'>
-        <Navbar />
         <Hero />
         <Features/>
         <Vision />
         <ServicesHome />
-        <Footer />
         
     </div>
   )
