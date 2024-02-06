@@ -2,8 +2,10 @@ import React from "react";
 import image1 from "../../assets/images/istockphoto-1.jpg";
 import Button from "./Button";
 import { Link } from "react-router-dom";
-import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
-// import { Link, NavLink } from "react-router-dom";
+import {
+  Link as ScrollLink,
+  animateScroll as scroll,
+} from "react-scroll";
 
 const Hero = () => {
   // scroll to top
@@ -35,14 +37,8 @@ const Hero = () => {
               </p>
 
               <Link to="./services" onClick={scrollToTop}>
-                <Button text="Learn More" ></Button>
+                <Button text="Learn More"></Button>
               </Link>
-
-              {/* <Link to="/about"> Learn More</Link>
-              <a href="/about"> Learn</a> */}
-              {/* <NavLink>
-                Learn Mo
-              </NavLink> */}
             </div>
           </div>
         </div>
