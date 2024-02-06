@@ -70,7 +70,8 @@ const Features = () => {
                           </div>
                         </Link> 
 
-                        <Link to='/services'>
+                          {/* this works  */}
+                        <Link to='/services' onClick={scrollToTop} className=' w-[90%] md:w-[28%]'>
                           Serve
                         </Link>
 
