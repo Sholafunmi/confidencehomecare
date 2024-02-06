@@ -68,10 +68,10 @@ const Navbar = () => {
               {
                 navObj.map((item, i)=>(
                   <li  className='menuItem w-full' onClick={openMenu}>
-                <Link to={item.path} key={i} onClick={scrollToTop}  >
-                  {item.display}
-                </Link>
-              </li>
+                    <Link to={item.path} key={i} onClick={scrollToTop} >
+                      {item.display}
+                    </Link>
+                  </li>
                 ))
               }
 

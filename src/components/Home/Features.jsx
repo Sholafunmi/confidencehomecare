@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Router, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
@@ -50,7 +50,7 @@ const Features = () => {
                                 </div>
 
                                 <div className='aboutBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] '>
-                                    <p className='flex items-center font-bold text-[20px]' >About Us</p>
+                                    <p className='flex items-center font-bold text-[30px]' >About Us</p>
                                 </div>
 
                           </div>
@@ -65,11 +65,15 @@ const Features = () => {
                                 </div>
 
                                 <div className='contactBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] '>
-                                    <p className='flex items-center font-bold text-[20px] ' href="/contact">Contact Us</p>
+                                    <p className='flex items-center font-bold text-[30px] ' href="/contact">Contact Us</p>
                                 </div>
 
                           </div>
                         </Link> 
+
+                        <Link to={'/services'} onClick={scrollToTop} >
+                          Serve
+                        </Link>
 
               
                    
