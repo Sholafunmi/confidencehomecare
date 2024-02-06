@@ -25,19 +25,25 @@ const Features = () => {
                             </div>
                         </Link> */}
 
-                        <Link to='/services' onClick={scrollToTop} className='md:w-[28%]'>
-                          <div name='servicebox' className="aboutbox flex-col w-[95%] h-[350px] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11]  ">
-                            <div className="servicesTop h-[80%] w-full flex">
-                                
-                            </div>
+                        {/* <Link to='/services' onClick={scrollToTop} className='md:w-[28%]'> */}
+                          <div name='servicebox' className="aboutbox flex-col w-[95%] md:w-[28%] h-[350px] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11]  ">
+                            <Link to={'/services'} onClick={scrollToTop} className="servicesTop h-[80%] w-full flex"  >
 
-                            <div className='servicesBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] '>
-                                <p className='flex items-center font-bold text-[20px]'>Services</p>
-                            </div>
+                            </Link>
+                            {/* <div className="servicesTop h-[80%] w-full flex">
+                                
+                            </div> */}
+
+                            {/* <div className='servicesBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] '> */}
+                                <Link to={"/services"} onClick={scrollToTop} className=' items-center font-bold text-[20px]    servicesBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff]'>
+                                  Services
+                                </Link>
+                                {/* <p className='flex items-center font-bold text-[20px]'>Services</p> */}
+                            {/* </div> */}
 
                           </div>
 
-                        </Link>
+                        {/* </Link> */}
                        
                         <Link to='/about' onClick={scrollToTop} className='md:w-[28%]'>
                           <div name='aboutbox' className="aboutbox flex-col w-[95%] h-[350px] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11]  ">

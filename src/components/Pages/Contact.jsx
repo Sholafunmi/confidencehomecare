@@ -61,7 +61,7 @@ const Contact = () => {
               <textarea className='border border-[#0a0511]'  name="message" id="" cols="30" rows="10"></textarea>
             </div>
 
-            <Link to="/services" smooth={true} offset={50} duration={500} >
+            <Link to=" "  >
               <Button text={'Submit'} />
             </Link>
             

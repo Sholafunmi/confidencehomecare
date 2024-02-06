@@ -1,14 +1,12 @@
 import React from 'react'
 import image1 from '../../assets/images/istockphoto-1.jpg'
-import Button from './Button'
+import Button from '../Home/Button'
 import { Link } from 'react-router-dom'
-// import { Link } from 'react-scroll';
 
 const Hero = () => {
   return (
     <div className='hero  mt-[130px] md:mt-[120px] w-full z-[-10] left-0 h-fit md:h-fit relative flex-col justify-center items-center bg-[#fbfbfc] '>
-        
-        
+
         <div className="hero w-full flex-col">
             <div className='top w-[80%] ml-6 md:mt-16 '>
                  <img className='md:w-[75%]' src={image1} alt="hero-image" />
@@ -23,19 +21,13 @@ const Hero = () => {
                         merely a destination but a holistic lifestyle.
                     </p> 
                     
-                    <Link to={'/services'}>
+                    <Link to={'/services'} >
                          <Button text={'Learn More'} />
                     </Link>
                    
                 </div>
             </div>    
         </div>
-
-        
-
-        {/* bg-[#b69d11]  */}
-        
-
     </div>
   )
 }

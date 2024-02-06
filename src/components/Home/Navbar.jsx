@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa';
 import Logo from '../../assets/images/confidenceLogo.png';
-// import { Link } from 'react-scroll';
 import { Link, NavLink } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
@@ -39,7 +38,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className='fixed w-full h-[120px] flex justify-between md:justify-start md:gap-[15%] lg:gap-[20%] items-center px-2 md:px-[5%] bg-[#fff] text-gray-300 border-b-4 '>
-         <Link   to="/" onClick={scrollToTop}  >
+         <Link   to="/" onClick={scrollToTop} >
           <img className='logo w-[250px] lg:w-[350px] md:w-[250px]' src={Logo} alt="brand Logo" />
          </Link>
 
@@ -86,5 +85,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-// confidencepersonalhomecare
