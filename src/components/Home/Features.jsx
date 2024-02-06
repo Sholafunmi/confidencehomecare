@@ -71,7 +71,7 @@ const Features = () => {
                         </Link> 
 
                           {/* this works  */}
-                        <Link to='/services' onClick='scrollToTop'>
+                        <Link to='/services'>
                           Serv
                         </Link>
 
