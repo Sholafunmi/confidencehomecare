@@ -37,51 +37,67 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className='fixed w-full h-[120px] flex justify-between md:justify-start md:gap-[15%] lg:gap-[20%] items-center px-2 md:px-[5%] bg-[#fff] text-gray-300 border-b-4 '>
-         <Link   to="/" onClick={scrollToTop} >
-          <img className='logo w-[250px] lg:w-[350px] md:w-[250px]' src={Logo} alt="brand Logo" />
-         </Link>
-
-      
+      <div className="fixed z-10 w-full h-[120px] flex justify-between md:justify-start md:gap-[15%] lg:gap-[20%] items-center px-2 md:px-[5%] bg-[#fff] text-gray-300 border-b-4 ">
+        <Link to="/" onClick={scrollToTop}>
+          <img
+            className="logo w-[250px] lg:w-[350px] md:w-[250px]"
+            src={Logo}
+            alt="brand Logo"
+          />
+        </Link>
 
         {/*DESKTOP MENU  */}
-        <div >
-           <ul className=' hidden md:flex gap-6 lg:text-2xl md:text-lg text-[#9256ed]'>
-            {
-              navObj.map((item, i)=>(
-              <NavLink to={item.path} key={i} className={(navClass)=> navClass.isActive ? "menuItems" : "menuItem"} onClick={scrollToTop}>
-                  {item.display}
+        <div>
+          <ul className=" hidden md:flex gap-6 lg:text-2xl md:text-lg text-[#9256ed]">
+            {navObj.map((item, i) => (
+              <NavLink
+                to={item.path}
+                key={i}
+                className={(navClass) =>
+                  navClass.isActive
+                    ? "menuItems"
+                    : "menuItem"
+                }
+                onClick={scrollToTop}
+              >
+                {item.display}
               </NavLink>
-            ))
-            }
-
-            </ul>
+            ))}
+          </ul>
         </div>
 
         {/* HAMBURGER  */}
         <div className="md:hidden cursor-pointer z-10 text-2xl text-[#b69d11] px-1 py-1 border-2 rounded-tr-[10px] rounded-bl-[10px] border-[#b69d11]  ">
-          {!nav ? <FaBars onClick={openMenu} /> : <FaTimes onClick={openMenu} />}
+          {!nav ? (
+            <FaBars onClick={openMenu} />
+          ) : (
+            <FaTimes onClick={openMenu} />
+          )}
         </div>
 
         {/* MOBILE MENU  */}
-           <ul className={!nav ? 'hidden' : '  absolute top-0 left-0 w-full h-screen text-[#2c1353] bg-gray-100 flex flex-col pt-28 pl-5 text-xl gap-8'}>
-              {
-                navObj.map((item, i)=>(
-                  <li  className='menuItem w-full' onClick={openMenu}>
-                    <Link to={item.path} key={i} onClick={scrollToTop} >
-                      {item.display}
-                    </Link>
-                  </li>
-                ))
-              }
-
-          </ul>
-
-    </div>
-
+        <ul
+          className={
+            !nav
+              ? "hidden"
+              : "  absolute top-0 left-0 w-full h-screen text-[#2c1353] bg-gray-100 flex flex-col pt-28 pl-5 text-xl gap-8"
+          }
+        >
+          {navObj.map((item, i) => (
+            <li
+              className="menuItem w-full"
+              onClick={openMenu}
+              key={i}
+            >
+              <Link to={item.path} onClick={scrollToTop}>
+                {item.display}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
-    
-  )
+  );
 }
 
 export default Navbar

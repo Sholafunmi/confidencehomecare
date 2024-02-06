@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { animateScroll as scroll } from 'react-scroll';
 
 
 
@@ -8,10 +9,14 @@ const Features = () => {
     scroll.scrollToTop();
   };
 
+  // useEffect(()=>{
+  //   scrollToTop()
+  // }, [])
+
   return (
     <div className='features w-full h-fit flex flex-col md:flex-row justify-center items-center mt-14 py-6 md:py-20 md:gap-10 ' >
-                        <div className=' w-[95%] md:w-[28%] '>
-                            <Link to='/services' onClick={scrollToTop} >
+                        <div className=' w-[95%] md:w-[28%] ' onClick={scrollToTop} >
+                            <Link to='/services'>
                             <div name='servicebox' className="aboutbox flex flex-col w-[95%] md:w-full  h-[350px] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11]  ">
                               <div className="servicesTop h-[80%] w-full flex">
                                   
@@ -29,8 +34,8 @@ const Features = () => {
                           </Link>
                         </div>
                         
-                        <div className=' w-[95%] md:w-[28%] '>
-                        <Link to='/about' onClick={scrollToTop} >
+                        <div className=' w-[95%] md:w-[28%]' onClick={scrollToTop} >
+                        <Link to='/about' >
                           <div name='aboutbox' className="aboutbox flex flex-col w-[95%] md:w-full h-[350px] mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11]  ">
                                 <div className="aboutTop h-[80%] w-full flex">
                                     
@@ -45,8 +50,8 @@ const Features = () => {
                       </div>
 
 
-                      <div className=' w-[95%] md:w-[28%] '>
-                        <Link to='/contact' onClick={scrollToTop}>
+                      <div className=' w-[95%] md:w-[28%]' onClick={scrollToTop} >
+                        <Link to='/contact'>
                           <div name='contactbox' className="contactbox flex flex-col w-[95%] h-[350px] md:w-full mb-5 md:mb-0 ml-[2.5%] md:ml-0 border-8 border-[#b69d11] ">
                                 <div className="contactTop h-[80%] w-full flex "href="/contact">
                                 

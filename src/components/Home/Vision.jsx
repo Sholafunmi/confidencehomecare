@@ -87,7 +87,7 @@ const Vision = () => {
            
            
         </div>
-        <Link to={'./about'} onClick={scrollToTop} >
+        <Link to={'/about'} onClick={scrollToTop} >
            <Button text={'See More About Us'} /> 
         </Link>
         

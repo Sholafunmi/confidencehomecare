@@ -56,16 +56,22 @@ body {
   background-repeat: no-repeat;
   /* background: linear-gradient(rgba(211, 204, 201, 0.5), rgba(223, 219, 229, 0.5)); */
 }
-Button:hover{
+/* Button:hover{
   background-color:#7036c7;
   color:#fff;
   border-left:solid 3px #b69d11;
   border-top:solid 5px #b69d11;
-}
+} */
 Button{
   border-left:solid 5px #7036c7;
   border-top:solid 5px #7036c7;
 }
+
+/* .learn-more-btn:hover{
+  background-color: #fff;
+  color: #b69d11;
+  cursor: pointer;
+} */
 
 
 /* @keyframes logo-spin {

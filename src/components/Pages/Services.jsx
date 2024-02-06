@@ -7,15 +7,12 @@ const Services = () => {
     <div id='services' className='services w-full h-fit flex flex-col justify-center pt-[120px] md:pt-[120px] '>
       <div className="servicesContent w-full flex flex-col justify-center ">
         <div className=' servicesIntro flex flex-col h-fit md:min-h-[50vh] px-[5%] py-6  text-[#e1ca47] '>
-
           <h3 className='self-center mb-10 text-4xl  md:text-6xl font-bold text-gray-50  border-b  border-[#e1ca47] ' >Our Services</h3>
-          <p>
               <p className=' text-[18px] md:text-[30px] text-gray-50 font-bold text-center'>
                 Confidence Personal Homecare Services specializes in providing companionship and attentive 
                 supervision for seniors and individuals requiring home care due to conditions like illness, injury, or cognitive diseases.
                 Our commitment is to offer a unique blend of personalized attention and a diverse range of activities to enhance the well-being and companionship of our valued clients. 
-              </p>
-          </p>       
+              </p>       
         </div>
 
         {/* bg-[#e26c3a] */}
