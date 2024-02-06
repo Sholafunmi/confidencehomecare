@@ -1,10 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 
 
 const Features = () => {
-   // scroll
    const scrollToTop = () => {
     scroll.scrollToTop();
   };
@@ -71,9 +70,13 @@ const Features = () => {
                           </div>
                         </Link> 
 
-                        <Link to={'/services'} onClick={scrollToTop} >
+                        <Link to='/services'>
                           Serve
                         </Link>
+
+                        <a href="/services">
+                          servee
+                         </a>
 
               
                    
