@@ -1,12 +1,10 @@
 import React from 'react'
-import Navbar from '../Home/Navbar'
-import Footer from '../Home/Footer'
 
 
 const Services = () => {
   return (
     
-    <div id='services' name='services' className='services w-full h-fit flex flex-col justify-center pt-[120px] md:pt-[120px] '>
+    <div id='services' className='services w-full h-fit flex flex-col justify-center pt-[120px] md:pt-[120px] '>
       <div className="servicesContent w-full flex flex-col justify-center ">
         <div className=' servicesIntro flex flex-col h-fit md:min-h-[50vh] px-[5%] py-6  text-[#e1ca47] '>
 

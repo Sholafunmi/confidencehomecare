@@ -32,9 +32,10 @@ const Features = () => {
                             </div>
 
                             <div className='servicesBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] '>
-                              <Link to={'/services'} onClick={scrollToTop} className='flex items-center font-bold text-[30px]' >
-                                <p>Services</p>
-                              </Link>
+                              <a href="/services"  onClick={scrollToTop} className='flex items-center font-bold text-[30px]' >
+                                Services
+                               
+                              </a>
                                 
                             </div>
 
