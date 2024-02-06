@@ -17,7 +17,11 @@ const Hero = () => {
     <>
       <div className="  mt-[130px] md:mt-[120px] w-full left-0 h-fit relative flex flex-col justify-center items-center bg-[#fbfbfc] ">
         <div className=" w-full flex-col">
-          <div className="top w-[80%] ml-6 md:mt-16 ">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="top w-[80%] ml-6 md:mt-16 "
+          >
             <img
               className="md:w-[75%]"
               src={image1}
@@ -25,7 +29,11 @@ const Hero = () => {
             />
           </div>
 
-          <div className="introText relative mt-[-10%] md:mt-[3%] md:absolute md:top-[13%] w-[80%] md:w-[50%] h-fit md:h-[450px] ml-14 md:ml-[45%] bg-[#7036c7] flex justify-center items-center p-4 md:p-16 rounded-tl-[50px] rounded-bl-[0px]">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="introText relative mt-[-10%] md:mt-[3%] md:absolute md:top-[13%] w-[80%] md:w-[50%] h-fit md:h-[450px] ml-14 md:ml-[45%] bg-[#7036c7] flex justify-center items-center p-4 md:p-16 rounded-tl-[50px] rounded-bl-[0px]"
+          >
             <div className="flex flex-col text-gray-50 gap-2 md:gap-6 ">
               <p className="text-2xl md:text-5xl font-bold ">
                 Recognizing life as a precious gift

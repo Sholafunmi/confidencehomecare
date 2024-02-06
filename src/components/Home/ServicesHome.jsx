@@ -15,16 +15,28 @@ const ServicesHome = () => {
   };
   return (
     <div className="w-full flex flex-col h-fit bg-[#F3F5FA] justify-center items-center pt-10 pb-16 gap-12 md:gap-10 ">
-      <h3 className="text-[#9256ed] text-2xl md:text-4xl font-bold  md:mb-6">
+      <h3
+        data-aos="slide-down"
+        data-aos-duration="800"
+        className="text-[#9256ed] text-2xl md:text-4xl font-bold  md:mb-6"
+      >
         Services That We Offer
       </h3>
       {/* firstbox  */}
       <div className="first flex flex-col md:flex-row  w-[90%] h-fit md:min-h-[50vh] justify-center items-center gap-4 md:gap-[10%]">
-        <div className="left w-full md:w-[50%] hit-fit ">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="800"
+          className="left w-full md:w-[50%] hit-fit "
+        >
           <img src={image1} alt="" />
         </div>
 
-        <div className="right w-full md:w-[50%] h-fit">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="800"
+          className="right w-full md:w-[50%] h-fit"
+        >
           <h3 className="text-2xl md:text-3xl font-bold text-[#9256ed]">
             Companionship Care
           </h3>
@@ -40,11 +52,19 @@ const ServicesHome = () => {
 
       {/* second box  */}
       <div className="first flex flex-col md:flex-row-reverse w-[90%] h-fit md:min-h-[50vh] justify-center items-center gap-4 md:gap-[10%]">
-        <div className="left w-full md:w-[50%] h-fit">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="800"
+          className="left w-full md:w-[50%] h-fit"
+        >
           <img src={image2} alt="" />
         </div>
 
-        <div className="right w-full md:w-[50%] h-fit">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="800"
+          className="right w-full md:w-[50%] h-fit"
+        >
           <h3 className="text-2xl md:text-3xl font-bold text-[#9256ed]">
             Personal Care
           </h3>
@@ -60,11 +80,19 @@ const ServicesHome = () => {
 
       {/* third box  */}
       <div className="first flex flex-col md:flex-row w-[90%] h-fit md:min-h-[50vh] justify-center items-center gap-4 md:gap-[10%]">
-        <div className="left w-full md:w-[50%] h-fit">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="800"
+          className="left w-full md:w-[50%] h-fit"
+        >
           <img src={image3} alt="" />
         </div>
 
-        <div className="right w-full md:w-[50%]">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="800"
+          className="right w-full md:w-[50%]"
+        >
           <h3 className="text-2xl md:text-3xl font-bold text-[#9256ed]">
             Household Assistance
           </h3>
