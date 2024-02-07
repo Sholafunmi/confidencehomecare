@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="  mt-[130px] md:mt-[120px] w-full left-0 h-fit relative flex flex-col justify-center items-center bg-[#fbfbfc] ">
+      <div className="  mt-[130px] md:mt-[120px] w-full overflow-hidden left-0 h-fit relative flex flex-col justify-center items-center bg-[#fbfbfc] ">
         <div className=" w-full flex-col">
           <div
             data-aos="fade-left"

@@ -14,7 +14,7 @@ const ServicesHome = () => {
     scroll.scrollToTop();
   };
   return (
-    <div className="w-full flex flex-col h-fit bg-[#F3F5FA] justify-center items-center pt-10 pb-16 gap-12 md:gap-10 ">
+    <div className="w-full overflow-hidden flex flex-col h-fit bg-[#F3F5FA] justify-center items-center pt-10 pb-16 gap-12 md:gap-10 ">
       <h3
         data-aos="slide-down"
         data-aos-duration="800"

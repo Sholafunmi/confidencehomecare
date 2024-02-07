@@ -18,7 +18,7 @@ const Vision = () => {
     <div
       name="vision"
       id="vision"
-      className="flex flex-col w-ful h-fit md:px-16 md:py-8 py-6 bg-[#fcfafa] text-[#040404] md:gap-20 gap-4 justify-center items-center md:items-start "
+      className="flex flex-col w-ful overflow-hidden h-fit md:px-16 md:py-8 py-6 bg-[#fcfafa] text-[#040404] md:gap-20 gap-4 justify-center items-center md:items-start "
     >
       {/* mobile intro h3 */}
       <h3 className="md:hidden flex font-bold text-2xl text-[#b69d11] ">
