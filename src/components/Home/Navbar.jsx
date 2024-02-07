@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="fixed z-10 w-full overflow-hidden h-[120px] flex justify-between md:justify-start md:gap-[15%] lg:gap-[20%] items-center px-2 md:px-[5%] bg-[#fff] text-gray-300 border-b-4 ">
+      <div className="fixed z-10 w-full h-[120px] flex justify-between md:justify-start md:gap-[15%] lg:gap-[20%] items-center px-2 md:px-[5%] bg-[#fff] text-gray-300 border-b-4 ">
         <Link to="/" onClick={scrollToTop}>
           <img
             className="logo w-[250px] lg:w-[350px] md:w-[250px]"
