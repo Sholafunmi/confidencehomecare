@@ -69,6 +69,22 @@ Button{
   border-top:solid 5px #7036c7;
 }
 
+.slick-next {
+  color: #3498db; /* Change to your desired color */
+}
+
+.slick-prev {
+  color: #3498db; /* Change to your desired color */
+}
+
+
+
+
+
+
+
+
+
 /* .learn-more-btn:hover{
   background-color: #fff;
   color: #b69d11;
