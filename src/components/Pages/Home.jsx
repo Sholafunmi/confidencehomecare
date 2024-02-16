@@ -4,16 +4,20 @@ import Vision from '../Home/Vision'
 import Features from '../Home/Features'
 import ServicesHome from '../Home/ServicesHome'
 import Testimonial from '../Home/Testimonial'
-
+// import FeedbackSurvey from '../Home/FeedbackSurvey'
+import FormSurveyTesting from '../Home/FormSurveyTesting'
 
 const Home = () => {
   return (
-    <div name='home' id='home' className='flex flex-col gap-4'>
+    <div name='home' id='home' className='flex flex-col'>
         <Hero />
         <Features/>
         <Vision />
         <ServicesHome />
         <Testimonial />
+        {/* <FeedbackSurvey /> */}
+        <FormSurveyTesting />
+     
         
     </div>
   )

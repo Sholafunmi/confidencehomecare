@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.1.0",
     "aos": "^2.3.4",
+    "google-auth-library": "^9.6.3",
+    "google-spreadsheet": "^4.1.1",
     "react": "^18.2.0",
     "react-aos": "^1.0.1",
     "react-dom": "^18.2.0",

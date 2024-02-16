@@ -1,17 +1,24 @@
 import React from "react";
 import image1 from "../../assets/images/istockphoto-1.jpg";
 import Button from "./Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Link as ScrollLink,
   animateScroll as scroll,
 } from "react-scroll";
 
 const Hero = () => {
+
+  const navigate = useNavigate()
   // scroll to top
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
+
+  const toLearnMore = ()=>{
+    navigate("/services")
+    scrollToTop()
+  }
 
   return (
     <>
@@ -44,9 +51,10 @@ const Hero = () => {
                 destination but a holistic lifestyle.
               </p>
 
-              <Link to="./services" onClick={scrollToTop}>
-                <Button text="Learn More"></Button>
-              </Link>
+              <Button
+                text="Learn More"
+                onClick={toLearnMore}
+              ></Button>
             </div>
           </div>
         </div>
