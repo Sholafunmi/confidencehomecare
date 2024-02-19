@@ -112,23 +112,25 @@ const Footer = () => {
             </a>
           </div>
         </div>
+        <div className="copyright"></div>
       </div>
-      <div className="flex w-full h-fit justify-center pb-8 bg-[#98830b] text-gray-200 text-[12px] ">
-        <p>
-          Website Developed by
-           <a
-            className="underline p-1 font-bold"
+
+      <div className="flex w-full h-fit justify-center align-center text-center pb-8 px-2 bg-[#98830b] text-gray-200 text-[18px] ">
+        <p className="justify-center text-center">
+          Copyright <span>&copy;</span> 2024
+          confidencepersonalhomecare.com | Website Developed
+          by
+          <a
+            className=" underline pl-1 font-bold text-purple-200"
             href="https://www.instagram.com/vibrant_consultancy_enterprise?igsh=MWs3Z2w4OGRka2YzZw=="
             target="_blank"
           >
-             VSCTE
+            VSCTE
           </a>
         </p>
       </div>
     </section>
   );
 };
-// #b69d11
 
-// bg-[#150330]
 export default Footer;
