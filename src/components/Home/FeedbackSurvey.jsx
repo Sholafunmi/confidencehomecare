@@ -3,15 +3,26 @@ import Button from "./Button";
 import { GoogleSpreadsheet } from "google-spreadsheet";
 
 const FeedbackSurvey = () => {
+
+
+  // google spreadsheet for spill 
+ 
+  
+
+
+
+  
+  // const [satisfactory, setSatisfactory] = useState("")
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     satisfactory: "",
     quality: "",
     communication: "",
-    Reliability: "",
+    reliability: "",
     respect: "",
-    Responsiveness: "",
+    responsiveness: "",
+    recommendation: "",
   });
 
   const handleInputChange = (e) => {
@@ -29,9 +40,7 @@ const FeedbackSurvey = () => {
     e.preventDefault();
 
     // Load your Google Spreadsheet using its published URL
-    const doc = new GoogleSpreadsheet(
-      ""
-    );
+    const doc = new GoogleSpreadsheet("");
 
     // Load the sheets and get the first one
     await doc.loadInfo();
@@ -47,12 +56,14 @@ const FeedbackSurvey = () => {
       satisfactory: "",
       quality: "",
       communication: "",
-      Reliability: "",
+      reliability: "",
       respect: "",
-      Responsiveness: "",
+      responsiveness: "",
+      recommendation: "",
     });
 
     alert("Form submitted successfully!");
+    
   };
 
   return (
@@ -74,10 +85,12 @@ const FeedbackSurvey = () => {
         {/* form  */}
         <form
           onSubmit={handleSubmit}
-          action=""
+          action="https://script.google.com/macros/s/AKfycby2XyIiTcooydRt3bKotM-AOBaVHrMUTHbHvJaD0I11cYkwuSWPzOB47ugzF6LzkoT-PA/exec"
           className="flex flex-col text-lg gap-4 bg-white border rounded-lg border-purple-800 w-full md:w-[70%] p-4 md:p-10 "
+          name="survey"
+          id="survey"
         >
-          <div className=" flex flex-col md:flex-row md:gap-10 gap-4 ">
+          {/* <div className=" flex flex-col md:flex-row md:gap-10 gap-4 "> */}
             <div className="md:flex gap-1">
               <label htmlFor="name"> Fullname:</label>
               <input
@@ -99,7 +112,7 @@ const FeedbackSurvey = () => {
                 onChange={handleInputChange}
               />
             </div>
-          </div>
+          {/* </div> */}
 
           <div>
             <label htmlFor="satisfactory">
@@ -113,7 +126,7 @@ const FeedbackSurvey = () => {
               name="satisfactory"
               id=""
               value="Very Satisfied"
-              onChange={handleInputChange}
+              onClick={handleInputChange}
             />{" "}
             Very Satisfied
             <br />
@@ -122,7 +135,7 @@ const FeedbackSurvey = () => {
               name="satisfactory"
               id=""
               value="Satisfied"
-              onChange={handleInputChange}
+              onClick={handleInputChange}
             />
             Satisfied
             <br />
@@ -131,7 +144,7 @@ const FeedbackSurvey = () => {
               name="satisfactory"
               id=""
               value="Neutral"
-              onChange={handleInputChange}
+              onClick={handleInputChange}
             />
             Neutral
             <br />
@@ -140,7 +153,7 @@ const FeedbackSurvey = () => {
               name="satisfactory"
               id=""
               value="Dissatisfied"
-              onChange={handleInputChange}
+              onClick={handleInputChange}
             />
             Dissatisfied
             <br />
@@ -149,7 +162,7 @@ const FeedbackSurvey = () => {
               name="satisfactory"
               id=""
               value="Very Dissatisfied"
-              onChange={handleInputChange}
+              onClick={handleInputChange}
             />
             Very Dissatisfied
           </div>
@@ -166,6 +179,7 @@ const FeedbackSurvey = () => {
               name="quality"
               id=""
               value="Excellent"
+              onChange={handleInputChange}
             />{" "}
             Excellent
             <br />
@@ -174,6 +188,7 @@ const FeedbackSurvey = () => {
               name="quality"
               id=""
               value="Good"
+              onChange={handleInputChange}
             />
             Good
             <br />
@@ -182,6 +197,7 @@ const FeedbackSurvey = () => {
               name="quality"
               id=""
               value="Fair"
+              onChange={handleInputChange}
             />
             Fair
             <br />
@@ -190,6 +206,7 @@ const FeedbackSurvey = () => {
               name="quality"
               id=""
               value="Poor"
+              onChange={handleInputChange}
             />
             Poor
             <br />
@@ -208,6 +225,7 @@ const FeedbackSurvey = () => {
               name="communication"
               id=""
               value="Excellent"
+              onChange={handleInputChange}
             />{" "}
             Excellent
             <br />
@@ -216,6 +234,7 @@ const FeedbackSurvey = () => {
               name="communication"
               id=""
               value="Good"
+              onChange={handleInputChange}
             />
             Good
             <br />
@@ -224,6 +243,7 @@ const FeedbackSurvey = () => {
               name="communication"
               id=""
               value="Fair"
+              onChange={handleInputChange}
             />
             Fair
             <br />
@@ -232,38 +252,42 @@ const FeedbackSurvey = () => {
               name="communication"
               id=""
               value="Poor"
+              onChange={handleInputChange}
             />
             Poor
           </div>
 
           {/* question 4  */}
           <div>
-            <label htmlFor="Reliability">
+            <label htmlFor="reliability">
               Were our caregivers reliable and punctual in
               delivering care services as scheduled?
             </label>
             <br />
             <input
               type="radio"
-              name="Reliability"
+              name="reliability"
               id=""
               value="Yes Always"
-            />{" "}
+              onChange={handleInputChange}
+            />
             Yes Always
             <br />
             <input
               type="radio"
-              name="Reliability"
+              name="reliability"
               id=""
               value="Most of the time"
+              onChange={handleInputChange}
             />
             Most of the time
             <br />
             <input
               type="radio"
-              name="Reliability"
+              name="reliability"
               id=""
               value="Sometimes"
+              onChange={handleInputChange}
             />
             Sometimes
           </div>
@@ -279,6 +303,7 @@ const FeedbackSurvey = () => {
               type="radio"
               name="respect"
               id=""
+              onChange={handleInputChange}
               value="Always"
             />{" "}
             Always
@@ -288,6 +313,7 @@ const FeedbackSurvey = () => {
               name="respect"
               id=""
               value="Most of the time"
+              onChange={handleInputChange}
             />
             Most of the time
             <br />
@@ -296,6 +322,7 @@ const FeedbackSurvey = () => {
               name="respect"
               id=""
               value="Sometimes"
+              onChange={handleInputChange}
             />
             Sometimes
             <br />
@@ -304,6 +331,7 @@ const FeedbackSurvey = () => {
               name="respect"
               id=""
               value="Rarely"
+              onChange={handleInputChange}
             />
             Rarely
             <br />
@@ -312,61 +340,67 @@ const FeedbackSurvey = () => {
               name="respect"
               id=""
               value="Never"
+              onChange={handleInputChange}
             />
             Never
           </div>
 
           {/* question 6  */}
           <div>
-            <label htmlFor="Responsiveness">
+            <label htmlFor="responsiveness">
               How responsive was Confidence Personal
               Homecare Services to your needs and concerns?
             </label>
             <br />
             <input
               type="radio"
-              name="Responsiveness"
+              name="responsiveness"
               id=""
               value="Very Responsive"
+              onChange={handleInputChange}
             />{" "}
             Very Responsive
             <br />
             <input
               type="radio"
-              name="Responsiveness"
+              name="responsiveness"
               id=""
               value="Responsive"
+              onChange={handleInputChange}
             />
             Responsive
             <br />
             <input
               type="radio"
-              name="Responsiveness"
+              name="responsiveness"
               id=""
               value="Neutral"
+              onChange={handleInputChange}
             />
             Neutral
             <br />
             <input
               type="radio"
-              name="Responsiveness"
+              name="responsiveness"
               id=""
               value="Unresponsive"
+              onChange={handleInputChange}
             />
             Unresponsive
             <br />
             <input
               type="radio"
-              name="Responsiveness"
+              name="responsiveness"
               id=""
               value="Very Unresponsive"
+              onChange={handleInputChange}
             />
             Very Unresponsive
           </div>
 
           {/* last Question  */}
           <div>
-            <label htmlFor="satisfactory">
+            <label htmlFor="recommendation">
               Based on your experience, how likely are you
               to recommend Confidence Personal Homecare
               Services to a friend or family member?
@@ -374,41 +408,46 @@ const FeedbackSurvey = () => {
             <br />
             <input
               type="radio"
-              name="satisfactory"
+              name="recommendation"
               id=""
               value="Very Likely"
-            />{" "}
+              onChange={handleInputChange}
+            />
             Very Likely
             <br />
             <input
               type="radio"
-              name="satisfactory"
+              name="recommendation"
               id=""
               value="Likely"
+              onChange={handleInputChange}
             />
             Likely
             <br />
             <input
               type="radio"
-              name="satisfactory"
+              name="recommendation"
               id=""
               value="Neutral"
+              onChange={handleInputChange}
             />
             Neutral
             <br />
             <input
               type="radio"
-              name="satisfactory"
+              name="recommendation"
               id=""
               value="Unlikely"
+              onChange={handleInputChange}
             />
             Unlikely
             <br />
             <input
               type="radio"
-              name="satisfactory"
+              name="recommendation"
               id=""
               value="Very Unlikely"
+              onChange={handleInputChange}
             />
             Very Unlikely
           </div>

@@ -1,172 +1,132 @@
-import React, { useRef, useState } from "react";
-import Button from "../Home/Button";
-import { Link } from "react-router-dom";
-import emailjs from "@emailjs/browser";
+import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import Home from "./Home";
+// import Button from "../Home/Button";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setMail] = useState("");
-  const [message, setMessage] = useState("");
-
-  // DYNAMIC TEMPLATES PARAMS
-  const templateParams = {
-    from_name: name,
-    from_email: email,
-    to_name: "Confidence HomeCare Services",
-    message: message,
-  };
-
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_syotvgl",
-        "template_8l5b80r",
-        
-        form.current,
-        {
-          publicKey: "Lmg9VuLWARl-_N6C-",
-        },
-       
-      )
-      .then(
-        () => {
-          console.log("SUCCESS!");
-
-          setName("");
-          setMail("");
-          setMessage("");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
-  };
+  const [state, handleSubmit] = useForm("moqgdrqe");
+  if (state.succeeded) {
+    return <Contact />
+    // return <p>Thanks for your feedback!</p>;
+  }
 
   return (
-    <div className="contact w-full flex flex-col h-fit md:min-h-screen pt-[120px] md:pt-[120px]">
-      <div className="leftRight w-full h-fit flex flex-col md:flex-row justify-center gap-12 md:gap-32 md:py-20  py-12 px-[5%]">
+    <div className="contact w-full flex flex-col h-fit md:min-h-screen pt-[120px] md:pt-[120px]  ">
+      <div className="leftRight w-full h-fit flex flex-col md:flex-row justify-center align-center gap-12 md:gap-32 md:py-20  py-12 px-[5%]">
         <div className="companyInfo flex flex-col w-full md:w-[40%] gap-4 text-[#b69d11]">
           <h1 className="text-2xl flex font-bold">
             Confidence Personal Homecare Services LLC
           </h1>
           <div className="address text-xl">
             <p>Address:</p>
-            <p>xxx Indianapolis xxx </p>
+            <p>2315 HERMITAGE WAY INDIANAPOLIS INDIANA</p>
           </div>
 
           <div className="phone text-xl">
             <p>Phone:</p>
-            <p>(317)000-0000</p>
+            <p>317-982-4221</p>
           </div>
 
           <div className="email text-xl">
             <p>Email: </p>
-            <p>confidencehomecare@gmail.com</p>
+            <p>confidencepersonalhomecare@gmail.com</p>
           </div>
 
           <div className="workingHours text-xl">
             <p>Working Hours:</p>
-            <p>Mon - Fri 9:00am - 5:00pm</p>
+            <p>Monday - Sunday</p>
           </div>
         </div>
 
         {/* contact form  */}
-        <div className="contactForm flex flex-col gap-4">
+        <div className="contactForm flex flex-col gap-4  md:w-[60%]">
           <h3 className="text-2xl font-bold">
             Contact Us Today!
           </h3>
           <p>
             Fill the form below, we would definitely get
-            back to you
+            back to you.
           </p>
 
+          {/* FORM  */}
           <form
-            ref={form}
-            onSubmit={sendEmail}
-            className="text-lg flex flex-col gap-4 border border-purple-700 rounded-3xl p-4"
+            onSubmit={handleSubmit}
+            className="flex flex-col text-lg gap-4 bg-white border rounded-lg border-purple-800 w-full md:w-[80%] p-4 md:p-10 "
           >
-            <label>Name</label>
+            {/* FIRST NAME  */}
+            <label htmlFor="firstname"> First Name</label>
             <input
               type="text"
-              name="user_name"
-              className="border border-[#0a0511]"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              id="firstname"
+              name="firstname"
+              required
+              className="border border-black"
             />
-            <label>Email</label>
-            <input
-              type="email"
-              name="user_email"
-              className="border border-[#0a0511]"
-              value={email}
-              onChange={(e) => setMail(e.target.value)}
+            <ValidationError
+              prefix="Firstname"
+              field="firstname"
+              errors={state.errors}
             />
-            <label>Message</label>
-            <textarea
-              name="message"
-              rows={5}
-              className="border border-[#0a0511]"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
-            <input type="submit" value="Send" />
-          </form>
 
-          {/* <form
-            method="post"
-            action=""
-            encType="text/plain"
-            className="text-lg flex flex-col gap-4"
-            name="contactForm"
-          >
-            
-            <div className="flex flex-col md:flex-row gap-6">
-              <div className="name flex flex-col">
-                <label htmlFor="name">First Name</label>
-                <input
-                  className="border border-[#0a0511] "
-                  type="text"
-                />
-              </div>
-              <div className="flex flex-col">
-                <label htmlFor="name">Last Name</label>
-                <input
-                  className="border border-[#0a0511]"
-                  type="text"
-                />
-              </div>
-            </div>
-            
-            <div className="mail flex flex-col">
-              <label htmlFor="email">Email</label>
-              <input
-                className="border border-[#0a0511]"
-                type="email"
-                name=""
-                id=""
-              />
-            </div>
-           
-            <div className="message flex flex-col">
-              <label htmlFor="message">Message</label>
-              <textarea
-                className="border border-[#0a0511]"
-                name="message"
-                id=""
-                cols="30"
-                rows="10"
-              ></textarea>
-            </div>
+            {/* LAST NAME  */}
+            <label htmlFor="lastname"> Last Name</label>
             <input
-              type="submit"
-              value="send"
-              className="bg-purple-700 text-gray-50  w-fit p-4 cursor-pointer  "
+              type="text"
+              id="lastname"
+              name="lastname"
+              required
+              className="border border-black"
             />
-          </form> */}
+            <ValidationError
+              prefix="LastName"
+              field="lastname"
+              errors={state.errors}
+            />
+
+            {/* EMAIL  */}
+            <label htmlFor="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              required
+              className="border border-black"
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+            {/* MESSAGE */}
+            <label htmlFor="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              className="border border-black"
+              rows={5}
+            />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+
+            <button
+              type="submit"
+              disabled={state.submitting}
+              className="w-fit self-center text-gray-50 font-bold p-4 bg-[#98830b] rounded-tr-[20px] rounded-bl-[20px] hover:bg-[#7036c7] hover:text-[#fff] hover:border-l-[3px] hover:border-t-[5px] "
+            >
+              Submit
+            </button>
+
+            <div className="submited hidden" id="submitted">
+              <p>
+                Thank you for filling our form, your inputs
+                have been successfully submitted!
+              </p>
+            </div>
+          </form>
         </div>
       </div>
     </div>

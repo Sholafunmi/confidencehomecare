@@ -1,10 +1,49 @@
 import React, { useState } from "react";
 import Button from "./Button";
-import { GoogleSpreadsheet } from "google-spreadsheet";
+import axios from "axios";
+import { Events } from "react-scroll";
+// import { GoogleSpreadsheet } from "google-spreadsheet";
 
 const FormSurveyTesting = () => {
-   
+  //  form states
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [satisfactory, setSatisfactory] = useState("");
+  const [quality, setQuality] = useState("");
+  const [communication, setCommunication] = useState("");
+  const [reliability, setReliability] = useState("");
+  const [respect, setRespect] = useState("");
+  const [responsiveness, setResponsiveness] = useState("");
+  const [recommendation, setRecommendation] = useState("");
 
+  // submite event
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    // console.log(name,email,satisfactory);
+    const data={
+      Name:name,
+      Email:email,
+      Satisfactory:satisfactory,
+      Quality:quality,
+      Communication:communication,
+      Reliability:reliability,
+      Respect:respect,
+      Responsiveness:responsiveness,
+      Recommendation:recommendation
+    }
+    axios.post(
+      "https://sheet.best/api/sheets/a3fdeef1-e01b-43e5-b59a-d814ba05885d",data).then((response)=>{console.log(response);
+      setName('');
+      setEmail('');
+      setSatisfactory('');
+      setQuality('')
+      setCommunication('')
+      setReliability('')
+      setRespect('')
+      setResponsiveness('')
+      setRecommendation('')
+    })
+  }
 
   return (
     <section className="w-full h-fit flex justify-center bg-gray-50  ">
@@ -23,7 +62,7 @@ const FormSurveyTesting = () => {
         </div>
         {/* form  */}
         {/* action="https://script.google.com/macros/s/AKfycbxCzG0DGpv_4m4_aJtkkw2Dv8gOaRbpPa23mx3Xsx9uVzDXsusiGEadvL5e7228PT6J/exec" */}
-        <form
+        <form 
           action=""
           className="flex flex-col text-lg gap-4 bg-white border rounded-lg border-purple-800 w-full md:w-[70%] p-4 md:p-10 "
         >
@@ -35,7 +74,8 @@ const FormSurveyTesting = () => {
                 name="name"
                 id=""
                 className="border border-black"
-                // onChange={handleInputChange}
+                onChange={(e)=>setName(e.target.value)}
+                value={name}
               />
             </div>
 
@@ -46,7 +86,8 @@ const FormSurveyTesting = () => {
                 name="email"
                 id=""
                 className="border border-black"
-                // onChange={handleInputChange}
+                onChange={(e)=>setEmail(e.target.value)}
+                value={email}
               />
             </div>
           </div>
@@ -63,7 +104,8 @@ const FormSurveyTesting = () => {
               name="satisfactory"
               id=""
               value="Very Satisfied"
-              //   onChange={handleInputChange}
+              onChange={(e)=>setSatisfactory(e.target.value)
+              }
             />{" "}
             Very Satisfied
             <br />
@@ -188,14 +230,14 @@ const FormSurveyTesting = () => {
 
           {/* question 4  */}
           <div>
-            <label htmlFor="Reliability">
+            <label htmlFor="reliability">
               Were our caregivers reliable and punctual in
               delivering care services as scheduled?
             </label>
             <br />
             <input
               type="radio"
-              name="Reliability"
+              name="reliability"
               id=""
               value="Yes Always"
             />{" "}
@@ -203,7 +245,7 @@ const FormSurveyTesting = () => {
             <br />
             <input
               type="radio"
-              name="Reliability"
+              name="reliability"
               id=""
               value="Most of the time"
             />
@@ -211,7 +253,7 @@ const FormSurveyTesting = () => {
             <br />
             <input
               type="radio"
-              name="Reliability"
+              name="reliability"
               id=""
               value="Sometimes"
             />
@@ -268,14 +310,14 @@ const FormSurveyTesting = () => {
 
           {/* question 6  */}
           <div>
-            <label htmlFor="Responsiveness">
+            <label htmlFor="responsiveness">
               How responsive was Confidence Personal
               Homecare Services to your needs and concerns?
             </label>
             <br />
             <input
               type="radio"
-              name="Responsiveness"
+              name="responsiveness"
               id=""
               value="Very Responsive"
             />{" "}
@@ -283,7 +325,7 @@ const FormSurveyTesting = () => {
             <br />
             <input
               type="radio"
-              name="Responsiveness"
+              name="responsiveness"
               id=""
               value="Responsive"
             />
@@ -291,7 +333,7 @@ const FormSurveyTesting = () => {
             <br />
             <input
               type="radio"
-              name="Responsiveness"
+              name="responsiveness"
               id=""
               value="Neutral"
             />
@@ -299,7 +341,7 @@ const FormSurveyTesting = () => {
             <br />
             <input
               type="radio"
-              name="Responsiveness"
+              name="responsiveness"
               id=""
               value="Unresponsive"
             />
@@ -307,7 +349,7 @@ const FormSurveyTesting = () => {
             <br />
             <input
               type="radio"
-              name="Responsiveness"
+              name="responsiveness"
               id=""
               value="Very Unresponsive"
             />
@@ -316,7 +358,7 @@ const FormSurveyTesting = () => {
 
           {/* last Question  */}
           <div>
-            <label htmlFor="satisfactory">
+            <label htmlFor="recommendation">
               Based on your experience, how likely are you
               to recommend Confidence Personal Homecare
               Services to a friend or family member?
@@ -363,11 +405,32 @@ const FormSurveyTesting = () => {
             Very Unlikely
           </div>
 
-          <Button text="Submit" id="submit" type="submit" />
+          {/* <Button text="Submit" id="submit" type="submit" /> */}
+          <input type="submit" value="Submit" />
         </form>
       </div>
     </section>
   );
 };
 
-export default FormSurveyTesting
+export default FormSurveyTesting;
+
+
+
+{/* <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycby2XyIiTcooydRt3bKotM-AOBaVHrMUTHbHvJaD0I11cYkwuSWPzOB47ugzF6LzkoT-PA/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            // Handle success
+            console.log("Form data sent successfully!");
+            form.reset();
+            window.location.href = "formsubmit.html"; // Redirect to success page
+        }).catch(error => {
+            console.error("Error sending form data:", error);
+        });
+      })
+    </script> */}
