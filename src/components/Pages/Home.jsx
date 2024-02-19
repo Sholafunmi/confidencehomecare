@@ -4,8 +4,8 @@ import Vision from '../Home/Vision'
 import Features from '../Home/Features'
 import ServicesHome from '../Home/ServicesHome'
 import Testimonial from '../Home/Testimonial'
-// import SurveyForm from '../Home/SurveyForm'
-import FeedbackSurvey from '../Home/FeedbackSurvey'
+import SurveyForm from '../Home/SurveyForm'
+// import FeedbackSurvey from '../Home/FeedbackSurvey'
 // import FormSurveyTesting from '../Home/FormSurveyTesting'
 
 const Home = () => {
@@ -16,8 +16,8 @@ const Home = () => {
         <Vision />
         <ServicesHome />
         <Testimonial />
-        {/* <SurveyForm /> */}
-        <FeedbackSurvey />
+        <SurveyForm />
+        {/* <FeedbackSurvey /> */}
         {/* <FormSurveyTesting /> */}
      
         

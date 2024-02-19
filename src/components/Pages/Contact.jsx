@@ -34,7 +34,7 @@ const Contact = () => {
 
           <div className="workingHours text-xl">
             <p>Working Hours:</p>
-            <p>Monday - Sunday</p>
+            <p>24/7 (Monday - Sunday) </p>
           </div>
         </div>
 
@@ -115,7 +115,7 @@ const Contact = () => {
             <button
               type="submit"
               disabled={state.submitting}
-              className="w-fit self-center text-gray-50 font-bold p-4 bg-[#98830b] rounded-tr-[20px] rounded-bl-[20px] hover:bg-[#7036c7] hover:text-[#fff] hover:border-l-[3px] hover:border-t-[5px] "
+              className="w-fit self-center text-gray-50 font-bold p-3 bg-[#98830b] rounded-tr-[20px] rounded-bl-[20px] hover:bg-[#7036c7] hover:text-[#fff] hover:border-l-[3px] hover:border-t-[5px] "
             >
               Submit
             </button>

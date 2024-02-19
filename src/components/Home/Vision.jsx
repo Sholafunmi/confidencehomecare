@@ -170,8 +170,8 @@ const Vision = () => {
 
       {/* mission  */}
       <div
-        data-aos="ease-in"
-        data-aos-duration=" "
+        data-aos="fade-up"
+        data-aos-duration="800 "
         className="mission w-[90%] flex  flex-col md:flex-row gap-4  md:gap-10 justify-center items-center mt-10"
       >
         <h3 className="md:hidden flex font-bold text-2xl text-[#b69d11] ">

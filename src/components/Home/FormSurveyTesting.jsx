@@ -61,8 +61,7 @@ const FormSurveyTesting = () => {
           </p>
         </div>
         {/* form  */}
-        {/* action="https://script.google.com/macros/s/AKfycbxCzG0DGpv_4m4_aJtkkw2Dv8gOaRbpPa23mx3Xsx9uVzDXsusiGEadvL5e7228PT6J/exec" */}
-        <form 
+       <form 
           action=""
           className="flex flex-col text-lg gap-4 bg-white border rounded-lg border-purple-800 w-full md:w-[70%] p-4 md:p-10 "
         >
