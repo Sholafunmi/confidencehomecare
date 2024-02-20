@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import axios from "axios";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 
 function SurveyForm() {
   const [state, handleSubmit] = useForm("moqgdrqe");
@@ -74,7 +74,6 @@ function SurveyForm() {
               name="satisfactory Level"
               id="verySatisfied"
               value="Very Satisfied"
-              //   value={}
             />
             Very Satisfied
             <br />
@@ -82,7 +81,7 @@ function SurveyForm() {
               type="radio"
               name="satisfactory Level"
               id="Satisfied"
-              value={"Satisfied"}
+              value="Satisfied"
             />
             Satisfied
             <br />
@@ -203,7 +202,7 @@ function SurveyForm() {
               name="reliability Level"
               id="Yes Always"
               value="Yes Always"
-            />{" "}
+            />
             Yes Always
             <br />
             <input
@@ -235,7 +234,7 @@ function SurveyForm() {
               name="respect Level"
               id="Always"
               value="Always"
-            />{" "}
+            />
             Always
             <br />
             <input

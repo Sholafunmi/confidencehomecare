@@ -4,7 +4,7 @@ import Home from "./Home";
 // import Button from "../Home/Button";
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("moqgdrqe");
+  const [state, handleSubmit] = useForm("mpzvdely");
   if (state.succeeded) {
     return <Contact />
     // return <p>Thanks for your feedback!</p>;
