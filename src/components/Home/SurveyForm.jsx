@@ -1,7 +1,6 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 // import axios from "axios";
-// import { Link } from "react-scroll";
 
 function SurveyForm() {
   const [state, handleSubmit] = useForm("mpzvdely");
@@ -76,12 +75,12 @@ function SurveyForm() {
               value="Very Satisfied"
             />
             Very Satisfied
+            <br />
             <ValidationError
               prefix="satisfactory Level"
               field="Very Satisfied"
               errors={state.errors}
             />
-            <br />
             <input
               type="radio"
               name="satisfactory Level"
@@ -131,6 +130,11 @@ function SurveyForm() {
             />
             Excellent
             <br />
+            <ValidationError
+              prefix="quality Level"
+              field="Excellent"
+              errors={state.errors}
+            />
             <input
               type="radio"
               name="quality Level"
@@ -170,6 +174,11 @@ function SurveyForm() {
             />
             Excellent
             <br />
+            <ValidationError
+              prefix="communication Level"
+              field="Excellent"
+              errors={state.errors}
+            />
             <input
               type="radio"
               name="communication Level"
@@ -210,6 +219,11 @@ function SurveyForm() {
             />
             Yes Always
             <br />
+            <ValidationError
+              prefix="reliability Level"
+              field="Yes Always"
+              errors={state.errors}
+            />
             <input
               type="radio"
               name="reliability Level"
@@ -242,6 +256,11 @@ function SurveyForm() {
             />
             Always
             <br />
+            <ValidationError
+              prefix="respect Level"
+              field="Always"
+              errors={state.errors}
+            />
             <input
               type="radio"
               name="respect Level"
@@ -290,6 +309,11 @@ function SurveyForm() {
             />{" "}
             Very Responsive
             <br />
+            <ValidationError
+              prefix="responsiveness Level"
+              field="Very Responsive"
+              errors={state.errors}
+            />
             <input
               type="radio"
               name="responsiveness Level"
@@ -339,6 +363,11 @@ function SurveyForm() {
             />{" "}
             Very Likely
             <br />
+            <ValidationError
+              prefix="recommendation Level"
+              field="Very Likely"
+              errors={state.errors}
+            />
             <input
               type="radio"
               name="recommendation Level"
