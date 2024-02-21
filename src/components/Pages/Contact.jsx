@@ -29,7 +29,9 @@ const Contact = () => {
 
           <div className="email text-xl">
             <p>Email: </p>
-            <p>confidencepersonalhomecare@gmail.com</p>
+            <p>
+              admin@confidencepersonalhomecare.comil.com
+            </p>
           </div>
 
           <div className="workingHours text-xl">

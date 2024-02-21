@@ -40,7 +40,7 @@ const Footer = () => {
           </p>
           <p className="flex flex-col md:flex-row justify-center items-center md:items-start md:justify-start">
             <strong>Email:</strong>{" "}
-            confidencepersonalhomecare@gmail.com
+            admin@confidencepersonalhomecare.com
           </p>
         </div>
 
@@ -118,8 +118,8 @@ const Footer = () => {
       <div className="flex w-full h-fit justify-center align-center text-center pb-8 px-2 bg-[#98830b] text-gray-200 text-[18px] ">
         <p className="justify-center text-center">
           Copyright <span>&copy;</span> 2024
-          confidencepersonalhomecare.com | Website Developed
-          by
+          admin@confidencepersonalhomecare.com |
+          Website Developed by
           <a
             className=" underline pl-1 font-bold text-purple-200"
             href="https://www.instagram.com/vibrant_consultancy_enterprise?igsh=MWs3Z2w4OGRka2YzZw=="
