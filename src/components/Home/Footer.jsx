@@ -18,7 +18,7 @@ const Footer = () => {
 
   return (
     <section>
-      <div className="w-full h-fit flex flex-col md:flex-row justify-around items-center   bg-[#98830b] text-[#eeedf0] gap-10 md:gap-0 py-8 md:py-16">
+      <div className="w-full h-fit flex flex-col md:flex-row justify-around items-center bg-[#98830b] text-[#eeedf0] gap-10 md:gap-0 py-8 md:py-16">
         <div className="top flex flex-col items-center md:items-start gap-2 md:gap-1">
           <Link to="/" onClick={scrollToTop}>
             <img
@@ -51,7 +51,7 @@ const Footer = () => {
           <Link
             to="/"
             onClick={scrollToTop}
-            className="text-gray-50 "
+            className="text-gray-50 hover:text-gray-300 hover:underline "
           >
             Home
           </Link>
@@ -59,7 +59,7 @@ const Footer = () => {
           <Link
             to="/services"
             onClick={scrollToTop}
-            className="text-gray-50"
+            className="text-gray-50 hover:text-gray-300 hover:underline"
           >
             Services
           </Link>
@@ -67,7 +67,7 @@ const Footer = () => {
           <Link
             to="/about"
             onClick={scrollToTop}
-            className="text-gray-50"
+            className="text-gray-50 hover:text-gray-300 hover:underline"
           >
             About Us
           </Link>
@@ -75,7 +75,7 @@ const Footer = () => {
           <Link
             to="/contact"
             onClick={scrollToTop}
-            className="text-gray-50 "
+            className="text-gray-50 hover:text-gray-300 hover:underline "
           >
             Contact Us
           </Link>
@@ -118,10 +118,10 @@ const Footer = () => {
       <div className="flex w-full h-fit justify-center align-center text-center pb-8 px-2 bg-[#98830b] text-gray-200 text-[18px] ">
         <p className="justify-center text-center">
           Copyright <span>&copy;</span> 2024
-          admin@confidencepersonalhomecare.com |
-          Website Developed by
+          admin@confidencepersonalhomecare.com | Website
+          Developed by
           <a
-            className=" underline pl-1 font-bold text-purple-200"
+            className=" underline pl-1 font-bold text-purple-200 hover:text-gray-400"
             href="https://www.instagram.com/vibrant_consultancy_enterprise?igsh=MWs3Z2w4OGRka2YzZw=="
             target="_blank"
           >

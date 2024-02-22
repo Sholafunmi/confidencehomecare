@@ -9,9 +9,6 @@ const Features = () => {
     scroll.scrollToTop();
   };
 
-  // useEffect(()=>{
-  //   scrollToTop()
-  // }, [])
 
   return (
     <div
@@ -31,9 +28,9 @@ const Features = () => {
             <div className="servicesTop h-[80%] w-full flex"></div>
 
             <div className="servicesBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] ">
-              <p className="flex items-center font-bold text-[30px]">
+              <h1 className="flex items-center font-bold text-[30px]">
                 Services
-              </p>
+              </h1>
             </div>
           </div>
         </Link>
@@ -51,9 +48,9 @@ const Features = () => {
             <div className="aboutTop h-[80%] w-full flex"></div>
 
             <div className="aboutBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] ">
-              <p className="flex items-center font-bold text-[30px]">
+              <h1 className="flex items-center font-bold text-[30px]">
                 About Us
-              </p>
+              </h1>
             </div>
           </div>
         </Link>
@@ -74,9 +71,9 @@ const Features = () => {
             ></div>
 
             <div className="contactBottom  h-[20%] w-full flex justify-center text-[#442572] bg-[#fff] ">
-              <p className="flex items-center font-bold text-[30px] ">
+              <h1 className="flex items-center font-bold text-[30px] ">
                 Contact Us
-              </p>
+              </h1>
             </div>
           </div>
         </Link>

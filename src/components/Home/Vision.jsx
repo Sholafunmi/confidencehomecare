@@ -14,16 +14,15 @@ const Vision = () => {
   };
 
   return (
-    // top-[200vh]
     <div
       name="vision"
       id="vision"
       className="flex flex-col w-ful overflow-hidden h-fit md:px-16 md:py-8 py-6 bg-[#fcfafa] text-[#040404] md:gap-20 gap-4 justify-center items-center md:items-start "
     >
       {/* mobile intro h3 */}
-      <h3 className="md:hidden flex font-bold text-2xl text-[#b69d11] ">
+      <h1 className="md:hidden flex font-bold text-2xl text-[#b69d11] ">
         OUR VISION{" "}
-      </h3>
+      </h1>
 
       <div className="vision w-[90%] flex flex-col md:flex-row md:gap-10 gap-2 justify-center items-center ">
         <div
@@ -39,9 +38,10 @@ const Vision = () => {
           data-aos-duration="800"
           className="visionleft flex flex-col md:w-[60%] text-[#2f1a4e] text-lg gap-2 text-justify"
         >
-          <h3 className="hidden md:flex font-bold text-2xl text-[#b69d11] ">
+          <h1 className="hidden md:flex font-bold text-2xl text-[#b69d11] ">
             OUR VISION{" "}
-          </h3>
+          </h1>
+
           <li>
             At{" "}
             <strong>
@@ -94,16 +94,16 @@ const Vision = () => {
         className="values w-full md:min-h-[70vh] flex flex-col md:flex-row md:gap-10 gap-4 justify-center items-center mt-10 "
       >
         {/* mobile intro h3 */}
-        <h3 className=" flex md:hidden font-bold text-2xl text-[#b69d11] ">
+        <h1 className=" flex md:hidden font-bold text-2xl text-[#b69d11] ">
           {" "}
           VALUES{" "}
-        </h3>
+        </h1>
         {/* mobile image  */}
         <div className="valuesright md:hidden w-[90%] md:w-[35%] h-[200px] md:min-h-[70vh] border-[10px]"></div>
         <div className="valuesleft flex flex-col w-[90%] md:w-[60%] text-[#2f1a4e] text-lg gap-2 text-justify">
-          <h3 className="hidden md:flex font-bold text-2xl text-[#b69d11]">
+          <h1 className="hidden md:flex font-bold text-2xl text-[#b69d11]">
             VALUES:
-          </h3>
+          </h1>
           <li>
             <strong>Compassion:</strong> We demonstrate
             empathy and kindness in every interaction,
@@ -174,19 +174,19 @@ const Vision = () => {
         data-aos-duration="800 "
         className="mission w-[90%] flex  flex-col md:flex-row gap-4  md:gap-10 justify-center items-center mt-10"
       >
-        <h3 className="md:hidden flex font-bold text-2xl text-[#b69d11] ">
+        <h1 className="md:hidden flex font-bold text-2xl text-[#b69d11] ">
           {" "}
           Mission Statement{" "}
-        </h3>
+        </h1>
         <div className="missionright flex w-[90%] md:w-[35%] border-[10px] ">
           <img src={missionImg} alt="vision-img" />
         </div>
 
         <div className="missionleft flex flex-col md:w-[60%] text-[#2f1a4e] text-lg gap-2 text-justify ">
-          <h3 className=" hidden md:flex font-bold text-2xl text-[#b69d11] ">
+          <h1 className=" hidden md:flex font-bold text-2xl text-[#b69d11] ">
             {" "}
             Mission Statement:{" "}
-          </h3>
+          </h1>
           <p>
             Confidence Personal Homecare Services is{" "}
             <strong>dedicated</strong> to{" "}

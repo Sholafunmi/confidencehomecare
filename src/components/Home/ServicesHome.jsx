@@ -15,13 +15,13 @@ const ServicesHome = () => {
   };
   return (
     <div className="w-full overflow-hidden flex flex-col h-fit bg-[#F3F5FA] justify-center items-center pt-10 pb-16 gap-12 md:gap-10 ">
-      <h3
+      <h1
         data-aos="slide-down"
         data-aos-duration="800"
         className="text-[#9256ed] text-2xl md:text-4xl font-bold  md:mb-6"
       >
         Services That We Offer
-      </h3>
+      </h1>
       {/* firstbox  */}
       <div className="first flex flex-col md:flex-row  w-[90%] h-fit md:min-h-[50vh] justify-center items-center gap-4 md:gap-[10%]">
         <div
@@ -29,7 +29,7 @@ const ServicesHome = () => {
           data-aos-duration="800"
           className="left w-full md:w-[50%] hit-fit "
         >
-          <img src={image1} alt="" />
+          <img src={image1} alt="companion care image" />
         </div>
 
         <div
@@ -37,9 +37,9 @@ const ServicesHome = () => {
           data-aos-duration="800"
           className="right w-full md:w-[50%] h-fit"
         >
-          <h3 className="text-2xl md:text-3xl font-bold text-[#9256ed]">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#9256ed]">
             Companionship Care
-          </h3>
+          </h2>
           <p className=" text-lg md:text-2xl flex text-justify ">
             Confidence Personal Homecare Services tailors
             companionship and attentive supervision
@@ -57,7 +57,7 @@ const ServicesHome = () => {
           data-aos-duration="800"
           className="left w-full md:w-[50%] h-fit"
         >
-          <img src={image2} alt="" />
+          <img src={image2} alt="Personal Care image" />
         </div>
 
         <div
@@ -65,9 +65,9 @@ const ServicesHome = () => {
           data-aos-duration="800"
           className="right w-full md:w-[50%] h-fit"
         >
-          <h3 className="text-2xl md:text-3xl font-bold text-[#9256ed]">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#9256ed]">
             Personal Care
-          </h3>
+          </h2>
           <p className="text-lg md:text-2xl flex text-justify ">
             Personal Care stands as a cornerstone service
             within the realm of home care. It encompasses
@@ -85,7 +85,7 @@ const ServicesHome = () => {
           data-aos-duration="800"
           className="left w-full md:w-[50%] h-fit"
         >
-          <img src={image3} alt="" />
+          <img src={image3} alt="Household Assistance image" />
         </div>
 
         <div
@@ -93,9 +93,9 @@ const ServicesHome = () => {
           data-aos-duration="800"
           className="right w-full md:w-[50%]"
         >
-          <h3 className="text-2xl md:text-3xl font-bold text-[#9256ed]">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#9256ed]">
             Household Assistance
-          </h3>
+          </h2>
           <p className="text-lg md:text-2xl flex text-justify ">
             At our service, we take pride in maintaining the
             cleanliness and safety of your home, offering

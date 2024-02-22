@@ -71,9 +71,8 @@ const Testimonials = () => {
         <h2 className=" text-2xl md:text-3xl font-semibold text-[#2c0539] mb-8">
           Customer Testimonials
         </h2>
-        <Slider {...settings} >
+        <Slider {...settings}>
           {testimonials.map((testimonial) => (
-            
             <div
               key={testimonial.id}
               className="bg-[#1b0423] p-6 rounded-lg shadow-md mt-8"

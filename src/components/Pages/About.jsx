@@ -1,24 +1,40 @@
 import React from 'react'
-import Navbar from '../Home/Navbar'
-import Footer from '../Home/Footer'
+import { Helmet } from 'react-helmet';
 
 
 
 const About = () => {
   return (
     <div id="about" className="about">
+      {/* HELMET  */}
+      <Helmet>
+        <title>
+          Confidence Personal Homecare Services-THE
+          CONFIDENCE YOU SEEK. Home Care Services in
+          Indianapolis Indiana.
+        </title>
+        <meta
+          name="description"
+          content="Serching for Homecare Services in Indiana for both young and old age, you are at the right place"
+        />
+        <link
+          rel="canonical"
+          href="https://confidencepersonalhomecare.com"
+        />
+      </Helmet>
+
       <div
         data-aos="fade-down"
         data-aos-duration="800"
         className="aboutContent w-full h-fit flex flex-col "
       >
         <div className="aboutintro w-full h-[50vh] flex justify-center items-center text-gray-50  mt-[120px] md:mt-[120px]">
-          <h3 className="text-6xl font-bold text-[#fff]">
+          <h1 className="text-6xl font-bold text-[#fff]">
             About Us
-          </h3>
+          </h1>
         </div>
         <main className="w-[95%] h-fit bg-[#fff] m-[2.5%] mt-10 p-5 text-justify text-lg border-[5px] border-purple-300 ">
-          <p>
+          <h2>
             {" "}
             <strong className="text-[#b69d11]">
               Confidence Personal Homecare Services LLC
@@ -26,7 +42,7 @@ const About = () => {
             is a licensed private home care provider
             operating in the State of Indiana proudly and
             surrounding counties.
-          </p>
+          </h2>
           <p>
             {" "}
             We stand by our commitment to the community we

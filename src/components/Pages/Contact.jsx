@@ -1,7 +1,6 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-// import Home from "./Home";
-// import Button from "../Home/Button";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("mpzvdely");
@@ -12,6 +11,22 @@ const Contact = () => {
 
   return (
     <div className="contact w-full flex flex-col h-fit md:min-h-screen pt-[120px] md:pt-[120px]  ">
+      {/* HELMET  */}
+      <Helmet>
+        <title>
+          Confidence Personal Homecare Services-THE
+          CONFIDENCE YOU SEEK. Home Care Services in
+          Indianapolis Indiana.
+        </title>
+        <meta
+          name="description"
+          content="Serching for Homecare Services in Indiana for both young and old age, you are at the right place"
+        />
+        <link
+          rel="canonical"
+          href="https://confidencepersonalhomecare.com"
+        />
+      </Helmet>
       <div className="leftRight w-full h-fit flex flex-col md:flex-row justify-center align-center gap-12 md:gap-32 md:py-20  py-12 px-[5%]">
         <div className="companyInfo flex flex-col w-full md:w-[40%] gap-4 text-[#b69d11]">
           <h1 className="text-2xl flex font-bold">
