@@ -29,27 +29,27 @@ const Contact = () => {
       </Helmet>
       <div className="leftRight w-full h-fit flex flex-col md:flex-row justify-center align-center gap-12 md:gap-32 md:py-20  py-12 px-[5%]">
         <div className="companyInfo flex flex-col w-full md:w-[40%] gap-4 text-[#b69d11]">
-          <h1 className="text-2xl flex font-bold">
+          <h1 className="text-lg md:text-2xl flex font-bold">
             Confidence Personal Homecare Services LLC
           </h1>
-          <div className="address text-xl">
+          <div className="address text-lg md:text-xl">
             <p>Address:</p>
-            <p>2315 HERMITAGE WAY INDIANAPOLIS INDIANA</p>
+            <p>2315 Hermitage Way Indianapolis Indiana</p>
           </div>
 
-          <div className="phone text-xl">
+          <div className="phone text-lg md:text-xl">
             <p>Phone:</p>
             <p>317-982-4221</p>
           </div>
 
-          <div className="email text-xl">
+          <div className="email text-lg md:text-xl">
             <p>Email: </p>
             <p>
-              admin@confidencepersonalhomecare.comil.com
+              admin@confidencepersonalhomecare.com
             </p>
           </div>
 
-          <div className="workingHours text-xl">
+          <div className="workingHours text-lg md:text-xl">
             <p>Working Hours:</p>
             <p>24/7 (Monday - Sunday) </p>
           </div>

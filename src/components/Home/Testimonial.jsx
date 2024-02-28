@@ -75,7 +75,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-[#1b0423] p-6 rounded-lg shadow-md mt-8"
+              className="bg-[#1b0423] p-6 lg:p-12 rounded-lg shadow-md mt-8"
             >
               <p className="text-gray-50 mb-4">
                 {testimonial.testimony}
